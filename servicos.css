@@ -1,0 +1,150 @@
+.tituloServicos {
+    font-size: 40px;
+    margin-top: 220px;
+    text-align: center;
+  }
+  
+  #containerServicos {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .cardservico {
+    width: 430px;
+    height: 200px;
+    color: white;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(232, 177, 9, 0.06);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* === 321px até 376px === */
+  @media screen and (min-width: 321px) and (max-width: 376px) {
+    .tituloServicos {
+      font-size: 24px;
+      max-width: 260px;
+      margin-top: 150px;
+      text-align: center;
+    }
+  
+    #containerServicos {
+      flex-direction: column;
+      gap: 80px;
+    }
+  
+    .cardservico {
+      width: 80%;
+      height: auto;
+      padding: 1.5rem;
+    }
+  }
+  
+  /* === 377px até 480px === */
+  @media screen and (min-width: 377px) and (max-width: 480px) {
+    .tituloServicos {
+      font-size: 28px;
+      margin-top: 160px;
+    }
+  
+    #containerServicos {
+      flex-direction: column;
+      gap: 25px;
+    }
+  
+    .cardservico {
+      width: 80%;
+      height: auto;
+    }
+  }
+  
+/* === 768px até 991px (Tablet) === */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .tituloServicos {
+      font-size: 32px;
+      margin-top: 180px;
+    }
+  
+    #containerServicos {
+      flex-direction: column; /* <-- muda de linha para coluna */
+      align-items: center;    /* <-- centraliza os cards */
+      gap: 30px;
+    }
+  
+    .cardservico {
+      width: 80%;     /* ocupa quase toda a largura visível */
+      height: auto;   /* altura automática */
+    }
+  }
+
+  /* === 1200px até 1599px === */
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+    .tituloServicos {
+      font-size: 36px;
+      margin-top: 200px;
+    }
+  
+    #containerServicos {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 35px;
+    }
+  
+    .cardservico {
+      width: 400px;
+      height: 200px;
+    }
+  }
+  
+  /* === 1600px até 1919px === */
+  @media screen and (min-width: 1600px) and (max-width: 1919px) {
+    .tituloServicos {
+      font-size: 40px;
+    }
+  
+    #containerServicos {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+  
+    .cardservico {
+      width: 430px;
+      height: 200px;
+    }
+  }
+  
+  /* === min-width 1920px === */
+  @media screen and (min-width: 1920px) {
+    .tituloServicos {
+      font-size: 44px;
+    }
+  
+    #containerServicos {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 45px;
+    }
+  
+    .cardservico {
+      width: 460px;
+      height: 200px;
+    }
+  }
+  

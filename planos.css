@@ -1,0 +1,32 @@
+
+.tituloPlanos {
+    font-size: 40px;
+    margin-top: 220px;
+    text-align: center;
+}
+  
+
+#containerPlanos {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.cardPlanos {
+    width: 320px;
+    height: 450px;
+    color: white;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(232, 177, 9, 0.06);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}

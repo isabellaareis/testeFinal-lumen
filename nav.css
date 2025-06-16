@@ -72,32 +72,32 @@
 
 /* BOTÃO DESKTOP */
 .nav-btn {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.05);
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 12px;
-  padding: 0.65rem 1.4rem;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  font-weight: 500;
-  font-size: 0.95rem;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+  background: transparent;
+  color: white;
+  border: 1px solid #E8B109;
+  padding: 0.9rem 1.8rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow:
+    0 0 4px rgba(232, 177, 9, 0.4),
+    0 0 12px rgba(232, 177, 9, 0.2);
+  backdrop-filter: blur(10px);
   transition: 
-    background 0.3s ease, 
+    box-shadow 0.4s ease,
     transform 0.3s ease,
-    box-shadow 0.4s ease;
+    background 0.3s ease;
 }
 
 .nav-btn:hover {
-  background: rgba(255, 255, 255, 0.15);
-  transform: scale(1.04);
-  box-shadow: 
-    0 6px 20px rgba(255, 255, 255, 0.08),
-    0 0 8px rgba(115, 115, 115, 0.4); /* toque sutil de glow dourado */
+  transform: scale(1.05);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.1)
+  );
 }
 
 /* HAMBURGER */
@@ -146,7 +146,7 @@
   left: 0;
   width: 100%;
 
-  background: #0f172a; 
+  background: #040911;
 
   max-height: 0;
   overflow: hidden;
@@ -185,7 +185,7 @@
     margin: 0;
     border-radius: 0;
     padding: 10px 20px;
-    background-color: #0f172a;
+    background-color: #040911;
   }
 
   .nav-links,
@@ -265,7 +265,7 @@
   .navbar {
     max-width: 1400px;
     margin: 40px auto;
-    padding: 15px 50px;
+    padding: 10px 50px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
   }
 
@@ -278,15 +278,15 @@
   }
 
   .nav-links a {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 
   .nav-title img {
-    height: 60px;
+    height: 55px;
   }
 
  .nav-btn {
-    padding: 0.85rem 2.5rem;
-    font-size: 1.3rem;
+    padding: 0.75rem 2.5rem;
+    font-size: 1rem;
   }
 }

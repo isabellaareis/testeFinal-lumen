@@ -1,93 +1,200 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navbar Moderna com Transição</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="nav.css" />
-    <link rel="stylesheet" href="semiCirculo.css" />
-    <link rel="stylesheet" href="luzes.css" />
-    <link rel="stylesheet" href="home.css" />
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="nav-top">
-        <!-- Logo -->
-        <a href="#" class="nav-title">
-          <img src="src/img/escudo-azul-amarelo-teste.png" alt="Logo" />
-        </a>
 
-        <!-- Links centralizados (desktop) -->
-        <div class="nav-links">
-          <a href="#">Início</a>
-          <a href="#">Sobre</a>
-          <a href="#">Serviços</a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar Moderna com Transição</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="semiCirculo.css" />
+  <link rel="stylesheet" href="luzes.css" />
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="sobre.css" />
+  <link rel="stylesheet" href="testemunhas.css" />
+  <link rel="stylesheet" href="faqs.css" />
+  <link rel="stylesheet" href="servicos.css" />
+  <link rel="stylesheet" href="planos.css" />
+</head>
 
-        <button class="nav-btn">Login</button>
+<body>
+  <nav class="navbar">
+    <div class="nav-top">
+      <!-- Logo -->
+      <a href="#" class="nav-title">
+        <img src="src/img/escudo-azul-amarelo-teste.png" alt="Logo" />
+      </a>
 
-        <!-- Menu mobile (hamburger) -->
-        <div class="hamburger" id="hamburger">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
-
-      <!-- Menu mobile com links e botão -->
-      <div class="nav-mobile" id="navMobile">
+      <!-- Links centralizados (desktop) -->
+      <div class="nav-links">
         <a href="#">Início</a>
         <a href="#">Sobre</a>
         <a href="#">Serviços</a>
-        <a class="nav-btn-mobile">Login</a>
+        <a href="#">FAQs</a>
       </div>
-    </nav>
 
-    <section class="hero">
-      <p class="badge">Não fique para trás. Comece a nova era da gestão.</p>
-      <h1>Lumen Gerador <span class="highlight">de Documentos</span></h1>
-      <p class="subtext">
-        Elabore documentos alinhados com a Lei 14.133/2021, com garantia de
-        conformidade e excelência visual.
-      </p>
-      <div class="buttons">
-        <a href="#" class="btn-primary">Painel</a>
-        <a href="#" class="btn-secondary">Começar</a>
+      <button class="nav-btn">Login</button>
+
+      <!-- Menu mobile (hamburger) -->
+      <div class="hamburger" id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
-    </section>
-
-    <!--SEMI CIRCULO-->
-    <div class="halo">
-      <svg viewBox="0 -300 1300 800" xmlns="http://www.w3.org/2000/svg">
-        <!--antes estava 0 -100 1300 500-->
-        <defs>
-          <linearGradient
-            id="neonBlueGradient"
-            x1="0%"
-            y1="0%"
-            x2="100%"
-            y2="0%"
-          >
-            <stop offset="0%" stop-color="#3CA7FF" stop-opacity="0" />
-            <stop offset="20%" stop-color="#3CA7FF" stop-opacity="0.3" />
-            <stop offset="50%" stop-color="#3CA7FF" stop-opacity="1" />
-            <stop offset="80%" stop-color="#3CA7FF" stop-opacity="0.3" />
-            <stop offset="100%" stop-color="#3CA7FF" stop-opacity="0" />
-          </linearGradient>
-        </defs>
-
-        <path
-          d="M 50 500 A 600 500 0 0 1 1250 500"
-          fill="none"
-          stroke="url(#neonBlueGradient)"
-          stroke-width="3"
-          class="neon-glow"
-        />
-        <!--antes estava d="M 50 380 A 600 380 0 0 1 1250 380"-->
-      </svg>
     </div>
 
+    <!-- Menu mobile com links e botão -->
+    <div class="nav-mobile" id="navMobile">
+      <a href="#">Início</a>
+      <a href="#">Sobre</a>
+      <a href="#">Serviços</a>
+      <a href="#">FAQs</a>
+      <a class="nav-btn-mobile">Login</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Plataforma <span class="highlight">Lumen</span></h1>
+    <p class="subtext">
+      Transformando a Gestão Pública
+    </p>
+  </section>
+
+  <!--SEMI CIRCULO-->
+  <div class="halo">
+    <svg viewBox="0 -300 1300 800" xmlns="http://www.w3.org/2000/svg">
+      <!--antes estava 0 -100 1300 500-->
+      <defs>
+        <linearGradient id="neonBlueGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#3CA7FF" stop-opacity="0" />
+          <stop offset="20%" stop-color="#3CA7FF" stop-opacity="0.3" />
+          <stop offset="50%" stop-color="#3CA7FF" stop-opacity="1" />
+          <stop offset="80%" stop-color="#3CA7FF" stop-opacity="0.3" />
+          <stop offset="100%" stop-color="#3CA7FF" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+
+      <path d="M 50 500 A 600 500 0 0 1 1250 500" fill="none" stroke="url(#neonBlueGradient)" stroke-width="3"
+        class="neon-glow" />
+      <!--antes estava d="M 50 380 A 600 380 0 0 1 1250 380"-->
+    </svg>
+  </div>
+
+  <section id="sobre">
+    <div id="cardsSobre">
+      <div class="cardLinha">
+        <div class="cardInfo-menor">
+          <div class="cardicon">
+            <h3 class="">teste</h3>
+            <p class="">testeeeeee</p>
+          </div>
+        </div>
+
+        <div class="cardInfo-menor">
+          <div class="cardicon">
+            <h3>teste</h3>
+            <p>testeeeeee</p>
+          </div>
+        </div>
+
+        <div class="cardInfo-menor">
+          <div class="cardicon">
+            <h3>teste</h3>
+            <p>testeeeeee</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cardLinha">
+        <div class="cardInfo-maior">
+          <div class="cardicon">
+            <h3>teste</h3>
+            <p>testeeeeee</p>
+          </div>
+        </div>
+
+        <div class="cardInfo-menor">
+          <div class="cardicon">
+            <h3>teste</h3>
+            <p>testeeeeee</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos">
+    <h2 class="tituloServicos">Essa é uma plataforma indicada para</h2>
+
+    <div id="containerServicos">
+      <div class="cardservico">
+        <div class="cardicon">
+          <h3>teste</h3>
+          <p>testeeeeee</p>
+        </div>
+      </div>
+
+      <div class="cardservico">
+        <div class="cardicon">
+          <h3>teste</h3>
+          <p>testeeeeee</p>
+        </div>
+      </div>
+
+      <div class="cardservico">
+        <div class="cardicon">
+          <h3>teste</h3>
+          <p>testeeeeee</p>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="tituloPlanos">Nossos Planos</h1>
+    <div id="containerPlanos">
+      <div class="cardPlanos">
+
+      </div>
+
+      <div class="cardPlanos">
+
+      </div>
+
+      <div class="cardPlanos">
+
+      </div>
+
+      <div class="cardPlanos">
+
+      </div>
+    </div>
+  </section>
+
+  <section class="testemunhas">
+    <h2 class="tituloTestemunhas">Lorem ipsum</h2>
+    <div id="containerTestemunhas">
+      <div class="cardtestemunhas">
+
+      </div>
+
+      <div class="cardtestemunhas">
+
+      </div>
+
+      <div class="cardtestemunhas">
+
+      </div>
+    </div>
+
+    <div class="btnContainer">
+      <button class="btnTestemunhas">Começar</button>
+    </div>
+  </section>
+
+  <section class="faqs">
+
+  </section>
+
+  <!--SOBRE
     <section class="cards-section">
       <div class="info-card">
         <div class="card-icon">icon</div>
@@ -111,25 +218,27 @@
         <p>This platform is authorized and regulated in the UK and Europe.</p>
       </div>
     </section>
+    -->
 
-    <!--FEIXES DE LUZ-->
-    <div class="light-container">
-      <div class="light-beam beam1"></div>
-      <div class="light-beam beam2"></div>
-      <div class="light-beam beam3"></div>
-      <div class="light-beam beam4"></div>
-      <div class="light-beam beam5"></div>
-      <div class="light-beam beam6"></div>
-    </div>
+  <!--FEIXES DE LUZ-->
+  <div class="light-container">
+    <div class="light-beam beam1"></div>
+    <div class="light-beam beam2"></div>
+    <div class="light-beam beam3"></div>
+    <div class="light-beam beam4"></div>
+    <div class="light-beam beam5"></div>
+    <div class="light-beam beam6"></div>
+  </div>
 
-    <script>
-      const hamburger = document.getElementById("hamburger");
-      const navMobile = document.getElementById("navMobile");
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navMobile = document.getElementById("navMobile");
 
-      hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        navMobile.classList.toggle("active");
-      });
-    </script>
-  </body>
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMobile.classList.toggle("active");
+    });
+  </script>
+</body>
+
 </html>

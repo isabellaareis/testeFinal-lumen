@@ -1,0 +1,196 @@
+#cardsSobre {
+    margin-top: -120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.cardLinha {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; 
+}
+
+.cardInfo-menor,
+.cardInfo-maior {
+    color: white;
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(232, 177, 9, 0.06);
+}
+
+.cardInfo-menor {
+    width: 430px;
+    height: 250px;
+    background: #0F172A;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.cardInfo-maior {
+    width: 890px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* RESPONSIVIDADE*/
+@media screen and (max-width: 376px) {
+    .cardInfo-menor,
+    .cardInfo-maior {
+        width: 80vw; 
+        height: auto;
+        padding: 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    #cardsSobre {
+        margin-top: -90px; 
+        gap: 50px; 
+    }
+
+    .cardLinha {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+}
+
+
+@media screen and (min-width: 377px) and (max-width: 480px) {
+    .cardInfo-menor,
+    .cardInfo-maior {
+        width: 80vw; 
+        height: auto;
+        padding: 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    #cardsSobre {
+        margin-top: -60px; 
+        gap: 50px; 
+    }
+
+    .cardLinha {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .cardInfo-menor,
+    .cardInfo-maior {
+        width: 85%; 
+        height: auto;
+        padding: 3rem 3rem;
+        font-size: 1.4rem;
+    }
+
+    #cardsSobre {
+        margin-top: -280px;
+        gap: 30px;
+    }
+
+    .cardLinha {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+    #cardsSobre {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .cardLinha {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap; 
+    }
+    
+    .cardInfo-menor {
+        font-size: 1.2rem;
+        width: 430px;
+        height: 300px;
+    }
+    
+    .cardInfo-maior {
+        font-size: 1.2rem;
+        width: 890px;
+        height: 300px;
+    }
+  }
+  
+
+@media screen and (min-width: 1600px) {
+#cardsSobre {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.cardLinha {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Espaçamento maior nas telas grandes */
+    flex-wrap: wrap;
+}
+
+.cardInfo-menor {
+    font-size: 1.3rem;
+    width: 500px;  /* Aumenta largura proporcionalmente */
+    height: 300px;
+}
+
+.cardInfo-maior {
+    font-size: 1.3rem;
+    width: 1020px;  /* Acompanha crescimento do layout */
+    height: 300px;
+}
+}
+
+@media screen and (min-width: 1920px) {
+  #cardsSobre {
+    margin-top: -140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .cardLinha {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  .cardInfo-menor {
+    font-size: 1.4rem;
+    width: 460px;    /* Aumenta proporcionalmente */
+    height: 340px;
+  }
+
+  .cardInfo-maior {
+    font-size: 1.4rem;
+    width: 990px;   /* Maior para preencher bem a linha */
+    height: 340px;
+  }
+}
+

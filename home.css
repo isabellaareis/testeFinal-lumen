@@ -1,9 +1,7 @@
-
-
 .hero {
   position: relative;
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 8rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,24 +10,15 @@
   z-index: 12;
 }
 
-.hero .badge {
-  background-color: rgba(255, 255, 255, 0.08);
-  padding: 0.5rem 1.5rem;
-  border-radius: 8px;
-  font-size: 0.9rem;
-  margin-bottom: 1.5rem;
-  color: #cbd5e1;
-}
-
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: 700;
   color: white;
   margin-bottom: 1rem;
 }
 
 .hero h1 .highlight {
-  color: #E8B109; 
+  color: #E8B109;
 }
 
 .hero .subtext {
@@ -39,81 +28,97 @@
   margin: 0 auto 2rem auto;
 }
 
-.buttons {
-  
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
+/* === 321px até 376px === */
+@media screen and (min-width: 321px) and (max-width: 376px) {
+  .hero {
+    padding: 8rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero .subtext {
+    font-size: 1.2rem;
+  }
 }
 
-.btn-primary, .btn-secondary {
-  cursor: pointer;
-  padding: 0.9rem 1.8rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: bold;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  display: inline-block;
+/* === 377px até 480px === */
+@media screen and (min-width: 377px) and (max-width: 480px) {
+  .hero {
+    padding: 10rem 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero .subtext {
+    font-size: 1.3rem;
+  }
 }
 
-.btn-primary {
-  cursor: pointer;
-  background: linear-gradient(145deg, #e8b109, #ffcc3f);
-  color: white;
-  padding: 0.9rem 1.8rem;
-  font-size: 1rem;
-  font-weight: 600;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  border: none;
-  border-radius: 12px;
-  box-shadow:
-    0 4px 10px rgba(232, 177, 9, 0.3),
-    0 0 0 rgba(0, 0, 0, 0);
-  transition: 
-    transform 0.3s ease,
-    box-shadow 0.4s ease,
-    background 0.3s ease;
+/* === 768px até 991px (tablet) === */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+  .hero {
+    padding: 13rem 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 3.7rem;
+  }
+
+  .hero .subtext {
+    font-size: 1.7rem;
+    max-width: 550px;
+  }
 }
 
-.btn-primary:hover {
-  transform: scale(1.05);
-  box-shadow:
-    0 6px 20px rgba(232, 177, 9, 0.5),
-    0 0 10px rgba(232, 177, 9, 0.4);
+/* === 1200px até 1599px === */
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+
+  .hero {
+    padding: 13rem 1.5rem;
+  }
+
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .hero .subtext {
+    font-size: 2rem;
+    max-width: 600px;
+  }
+}
+
+/* === 1600px até 1919px === */
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
+  .hero h1 {
+    font-size: 4.8rem;
+  }
+
+  .hero .subtext {
+    font-size: 2rem;
+    max-width: 640px;
+  }
+}
+
+/* === min-width 1920px === */
+@media screen and (min-width: 1920px) {
+  .hero {
+    padding: 10rem 3rem;
+  }
+
+  .hero h1 {
+    font-size: 5rem;
+  }
+
+  .hero .subtext {
+    font-size: 1.4rem;
+    max-width: 700px;
+  }
 }
 
 
-.btn-secondary {
-  cursor: pointer;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0.03),
-    rgba(255, 255, 255, 0.05)
-  );
-  color: white;
-  border: 1px solid #E8B109;
-  padding: 0.9rem 1.8rem;
-  border-radius: 12px;
-  font-size: 1rem;
-  font-weight: 500;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  box-shadow:
-    0 0 4px rgba(232, 177, 9, 0.4),
-    0 0 12px rgba(232, 177, 9, 0.2);
-  backdrop-filter: blur(10px);
-  transition: 
-    box-shadow 0.4s ease,
-    transform 0.3s ease,
-    background 0.3s ease;
-}
-
-.btn-secondary:hover {
-  transform: scale(1.05);
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0.08),
-    rgba(255, 255, 255, 0.1)
-  );
-}
