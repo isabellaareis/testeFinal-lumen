@@ -1,192 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+    <title>Navbar Moderna com Transição</title>
     <link rel="stylesheet" href="styles.css" />
-    <title>Web Design Mastery | Unique</title>
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="semiCirculo.css" />
+    <link rel="stylesheet" href="luzes.css" />
+    <link rel="stylesheet" href="home.css" />
   </head>
   <body>
-    <nav>
-      <div class="nav__header">
-        <div class="nav__logo">
-          <a href="#" class="nav__logo">
-            <img src="assets/logo-light.png" alt="logo" class="logo-light" />
-            <img src="assets/logo-dark.png" alt="logo" class="logo-dark" />
-            Unique
-          </a>
+    <nav class="navbar">
+      <div class="nav-top">
+        <!-- Logo -->
+        <a href="#" class="nav-title">
+          <img src="src/img/escudo-azul-amarelo-teste.png" alt="Logo" />
+        </a>
+
+        <!-- Links centralizados (desktop) -->
+        <div class="nav-links">
+          <a href="#">Início</a>
+          <a href="#">Sobre</a>
+          <a href="#">Serviços</a>
         </div>
-        <div class="nav__menu__btn" id="menu-btn">
-          <i class="ri-menu-3-line"></i>
+
+        <button class="nav-btn">Login</button>
+
+        <!-- Menu mobile (hamburger) -->
+        <div class="hamburger" id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </div>
-      <ul class="nav__links" id="nav-links">
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#car">Cars</a></li>
-        <li><a href="#feature">Features</a></li>
-        <li><a href="#help">Help</a></li>
-        <li>
-          <button class="btn">
-            <span><i class="ri-apple-fill"></i></span>
-            Download App
-          </button>
-        </li>
-      </ul>
+
+      <!-- Menu mobile com links e botão -->
+      <div class="nav-mobile" id="navMobile">
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Serviços</a>
+        <a class="nav-btn-mobile">Login</a>
+      </div>
     </nav>
 
-    <header>
-      <div class="header__image">
-        <img src="assets/header.png" alt="header" />
+    <section class="hero">
+      <p class="badge">Não fique para trás. Comece a nova era da gestão.</p>
+      <h1>Lumen Gerador <span class="highlight">de Documentos</span></h1>
+      <p class="subtext">
+        Elabore documentos alinhados com a Lei 14.133/2021, com garantia de
+        conformidade e excelência visual.
+      </p>
+      <div class="buttons">
+        <a href="#" class="btn-primary">Painel</a>
+        <a href="#" class="btn-secondary">Começar</a>
       </div>
-      <div class="header__content">
-        <h1>Premium Car Rental In New York</h1>
-        <p class="section__description">
-          Discover the ultimate car rental experience in New York with Premium
-          Car Rental. We offer a wide range of luxury vehicles, exceptional
-          customer service, and seamless booking options to make your journey
-          unforgettable.
+    </section>
+
+    <!--SEMI CIRCULO-->
+    <div class="halo">
+      <svg viewBox="0 -300 1300 800" xmlns="http://www.w3.org/2000/svg">
+        <!--antes estava 0 -100 1300 500-->
+        <defs>
+          <linearGradient
+            id="neonBlueGradient"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="0%"
+          >
+            <stop offset="0%" stop-color="#3CA7FF" stop-opacity="0" />
+            <stop offset="20%" stop-color="#3CA7FF" stop-opacity="0.3" />
+            <stop offset="50%" stop-color="#3CA7FF" stop-opacity="1" />
+            <stop offset="80%" stop-color="#3CA7FF" stop-opacity="0.3" />
+            <stop offset="100%" stop-color="#3CA7FF" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+
+        <path
+          d="M 50 500 A 600 500 0 0 1 1250 500"
+          fill="none"
+          stroke="url(#neonBlueGradient)"
+          stroke-width="3"
+          class="neon-glow"
+        />
+        <!--antes estava d="M 50 380 A 600 380 0 0 1 1250 380"-->
+      </svg>
+    </div>
+
+    <section class="cards-section">
+      <div class="info-card">
+        <div class="card-icon">icon</div>
+        <h3>Transparent Fees On Everything</h3>
+        <p>
+          A simple, straightforward investment process with clear & easy to
+          understand pricing.
         </p>
       </div>
-    </header>
-
-    <section class="section__container about__container" id="about">
-      <div class="about__image">
-        <img src="assets/about.png" alt="about" />
-      </div>
-      <div class="about__content">
-        <h3 class="section__subheader">CONVENIENT INTERACTION</h3>
-        <h2 class="section__header">Modern App</h2>
-        <p class="section__description">
-          At Premium Car Rental, we redefine the car rental experience in New
-          York with our unparalleled commitment to quality and luxury. Whether
-          you're exploring the city for business or leisure, our fleet of
-          high-end vehicles ensures a sophisticated and comfortable ride.
+      <div class="info-card">
+        <div class="card-icon">icon</div>
+        <h3>Take Advantage Of Tax Relief</h3>
+        <p>
+          Claim up to 30% of your investment value back on any qualifying
+          investments.
         </p>
-        <p class="section__description">
-          With easy booking options, competitive pricing, and dedicated customer
-          support, we strive to make every journey effortless and enjoyable
-        </p>
-        <div class="about__btn">
-          <button class="btn">
-            <span><i class="ri-apple-fill"></i></span>
-            Download App
-          </button>
-        </div>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">icon</div>
+        <h3>Fully Regulated, Safe & Secure</h3>
+        <p>This platform is authorized and regulated in the UK and Europe.</p>
       </div>
     </section>
 
-    <section class="fleet__container" id="car">
-      <h3 class="section__subheader">ONLY THE BEST CARS</h3>
-      <h2 class="section__header">Our Vehicle Fleet</h2>
-      <p class="section__description">
-        Explore our exclusive collection of luxury vehicles, designed to offer
-        unmatched comfort, style, and performance. From elegant sedans to
-        powerful SUVs, our fleet is perfect for every occasion, ensuring a
-        premium driving experience in New York.
-      </p>
-      <div class="fleet__wrapper-1">
-        <div class="fleet__images">
-          <img src="assets/fleet-1.jpg" alt="fleet" />
-          <img src="assets/fleet-2.jpg" alt="fleet" />
-          <img src="assets/fleet-3.jpg" alt="fleet" />
-          <img src="assets/fleet-4.jpg" alt="fleet" />
-          <img src="assets/fleet-5.jpg" alt="fleet" />
-        </div>
-      </div>
-      <div class="fleet__wrapper-2">
-        <div class="fleet__images">
-          <img src="assets/fleet-6.jpg" alt="fleet" />
-          <img src="assets/fleet-7.jpg" alt="fleet" />
-          <img src="assets/fleet-8.jpg" alt="fleet" />
-          <img src="assets/fleet-9.jpg" alt="fleet" />
-          <img src="assets/fleet-10.jpg" alt="fleet" />
-          <img src="assets/fleet-11.jpg" alt="fleet" />
-          <img src="assets/fleet-12.jpg" alt="fleet" />
-        </div>
-      </div>
-    </section>
+    <!--FEIXES DE LUZ-->
+    <div class="light-container">
+      <div class="light-beam beam1"></div>
+      <div class="light-beam beam2"></div>
+      <div class="light-beam beam3"></div>
+      <div class="light-beam beam4"></div>
+      <div class="light-beam beam5"></div>
+      <div class="light-beam beam6"></div>
+    </div>
 
-    <section class="section__container feature__container" id="feature">
-      <h3 class="section__subheader">BEST FEATURES</h3>
-      <h2 class="section__header">Our Features</h2>
-      <p class="section__description">
-        Enjoy easy booking, competitive pricing, 24/7 customer support, and a
-        fleet of luxury vehicles tailored to your needs. We prioritize your
-        convenience and satisfaction at every step.
-      </p>
-      <div class="feature__grid">
-        <div class="feature__card">
-          <span><i class="ri-bank-card-line"></i></span>
-          <h4>Most Felxible Payment Plans</h4>
-        </div>
-        <div class="feature__card">
-          <span><i class="ri-customer-service-2-line"></i></span>
-          <h4>Roadside Assistance 24/7</h4>
-        </div>
-        <div class="feature__card">
-          <span><i class="ri-roadster-line"></i></span>
-          <h4>Your Choice Of Mechanic</h4>
-        </div>
-        <div class="feature__card">
-          <span><i class="ri-award-line"></i></span>
-          <h4>The Best Extended Auto Warranties</h4>
-        </div>
-      </div>
-    </section>
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navMobile = document.getElementById("navMobile");
 
-    <section class="section__container banner__container" id="help">
-      <h2 class="section__header">Drive With Unique Today</h2>
-      <p class="section__description">
-        Stand out on the road with our exclusive range of luxury vehicles.
-        Whether it's for business or leisure, drive in style and comfort with
-        Premium Car Rental, where every journey becomes extraordinary.
-      </p>
-      <div class="banner__btn">
-        <button class="btn">
-          <span><i class="ri-apple-fill"></i></span>
-          Download App
-        </button>
-      </div>
-    </section>
-
-    <footer>
-      <div class="section__container footer__container">
-        <div class="footer__col">
-          <a href="#" class="footer__logo">
-            <img src="assets/logo-dark.png" alt="logo" />
-            Unique
-          </a>
-          <p class="section__description">
-            Experience the best of New York with the elegance and reliability of
-            Premium Car Rental.
-          </p>
-        </div>
-        <div class="footer__col">
-          <ul class="footer__links">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Cars</a></li>
-            <li><a href="#">Futures</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Subscribe To News</h4>
-          <form action="/">
-            <input type="text" placeholder="Your Email" />
-            <button class="btn"><i class="ri-arrow-right-line"></i></button>
-          </form>
-        </div>
-      </div>
-      <div class="footer__bar">
-        Copyright © 2025 Web Design Mastery. All rights reserved.
-      </div>
-    </footer>
-
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="main.js"></script>
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMobile.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
