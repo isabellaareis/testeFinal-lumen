@@ -94,7 +94,7 @@
     .cardInfo-maior {
         width: 80vw; 
         height: auto;
-        padding: 1.5rem;
+        padding: 2.2rem;
         font-size: 0.95rem;
     }
 
@@ -116,9 +116,18 @@
     .cardInfo-maior {
         width: 80vw; 
         height: auto;
-        padding: 1.5rem;
-        font-size: 0.95rem;
+        padding: 2.5rem;
     }
+
+    .cardInfo-maior {
+        padding: 2rem;
+    }
+
+
+    .cardInfo-menor p,
+    .cardInfo-maior p {
+        font-size: 1.1rem;
+    } 
 
     #cardsSobre {
         margin-top: -60px; 
@@ -142,6 +151,16 @@
         font-size: 1.4rem;
     }
 
+    .cardInfo-menor p,
+    .cardInfo-maior p{
+        font-size: 1.4rem;
+    } 
+
+    .cardInfo-menor h3,
+    .cardInfo-maior h3{
+        font-size: 1.4rem;
+    } 
+
     #cardsSobre {
         margin-top: -280px;
         gap: 50px;
@@ -158,7 +177,7 @@
         position: absolute;
         top: 0;  
         left: 30px;
-        width: 65px; 
+        width: 75px; 
         height: 3px; 
         background-color: #4480C4; 
         border-top-left-radius: 8px;
@@ -185,16 +204,38 @@
     }
     
     .cardInfo-menor {
-        font-size: 1.2rem;
+        padding: 2.5rem;
         width: 400px;
-        height: 320px;
+        height: 370px;
     }
     
     .cardInfo-maior {
-        font-size: 1.2rem;
         width: 840px;
-        height: 320px;
+        height: 370px;
     }
+
+    .cardInfo-menor p,
+    .cardInfo-maior p{
+        font-size: 1.2rem;
+    } 
+
+    .cardInfo-menor h3,
+    .cardInfo-maior h3{
+        font-size: 1.3rem;
+    } 
+
+    .icon-eye::before {
+        content: "";
+        position: absolute;
+        top: 0;  
+        left: 25px;
+        width: 50px; 
+        height: 3px; 
+        background-color: #4480C4; 
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
   }
   
 
@@ -244,15 +285,23 @@
   }
 
   .cardInfo-menor {
-    font-size: 1.4rem;
     width: 460px;    /* Aumenta proporcionalmente */
     height: 340px;
   }
 
   .cardInfo-maior {
-    font-size: 1.4rem;
     width: 990px;   /* Maior para preencher bem a linha */
     height: 340px;
   }
+
+  .cardInfo-menor p,
+  .cardInfo-maior p{
+      font-size: 1.1rem;
+  } 
+
+  .cardInfo-menor h3,
+  .cardInfo-maior h3{
+      font-size: 1.2rem;
+  } 
 }
 

@@ -54,8 +54,8 @@
   /* === 321px até 376px === */
   @media screen and (min-width: 321px) and (max-width: 376px) {
     .tituloServicos {
-      font-size: 26px;
-      max-width: 280px;
+      font-size: 27px;
+      max-width: 300px;
       margin: 100px auto 0;
       text-align: center;
     }
@@ -76,7 +76,7 @@
   @media screen and (min-width: 377px) and (max-width: 480px) {
     .tituloServicos {
       font-size: 30px;
-      max-width: 360px;
+      max-width: 400px;
       margin: 100px auto 0;
       text-align: center;
     }
@@ -87,9 +87,11 @@
     }
   
     .cardservico {
+      margin-top: -10px;
       width: 80%;
       height: auto;
     }
+
   }
   
 /* === 768px até 991px (Tablet) === */
@@ -97,19 +99,28 @@
       .tituloServicos {
       font-size: 45px;
       max-width: 500px;
-      margin: 180px auto 0;
+      margin: 140px auto 0;
       text-align: center;
     }
 
     #containerServicos {
-      flex-direction: column; /* <-- muda de linha para coluna */
-      align-items: center;    /* <-- centraliza os cards */
+      flex-direction: column; 
+      align-items: center;   
       gap: 100px;
     }
   
     .cardservico {
-      width: 80%;     /* ocupa quase toda a largura visível */
-      height: auto;   /* altura automática */
+      margin-top: -20px;
+      width: 80%;     
+      height: auto;  
+    }
+
+    .cardservico p {
+      font-size: 1.4rem;
+    }
+
+    .cardservico h3 {
+      font-size: 1.4rem;
     }
   }
 
@@ -130,7 +141,15 @@
   
     .cardservico {
       width: 400px;
-      height: 240px;
+      height: 280px;
+    }
+
+    .cardservico p {
+      font-size: 1.2rem;
+    }
+
+    .cardservico h3 {
+      font-size: 1.3rem;
     }
   }
   
@@ -157,10 +176,11 @@
   /* === min-width 1920px === */
   @media screen and (min-width: 1920px) {
     .tituloServicos {
-      font-size: 44px;
+      font-size: 48px;
     }
   
     #containerServicos {
+      margin-top: 200px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -170,7 +190,15 @@
   
     .cardservico {
       width: 460px;
-      height: 200px;
+      height: 240px;
+    }
+
+    .cardservico p {
+      font-size: 1.2rem;
+    }
+
+    .cardservico h3 {
+      font-size: 1.3rem;
     }
   }
   

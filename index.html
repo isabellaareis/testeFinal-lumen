@@ -1,379 +1,352 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navbar Moderna com Transição</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="nav.css" />
-    <link rel="stylesheet" href="semiCirculo.css" />
-    <link rel="stylesheet" href="luzes.css" />
-    <link rel="stylesheet" href="home.css" />
-    <link rel="stylesheet" href="sobre.css" />
-    <link rel="stylesheet" href="testemunhas.css" />
-    <link rel="stylesheet" href="faqs.css" />
-    <link rel="stylesheet" href="servicos.css" />
-    <link rel="stylesheet" href="planos.css" />
-  </head>
 
-  <body>
-    <nav class="navbar">
-      <div class="nav-top">
-        <!-- Logo -->
-        <a href="#" class="nav-title">
-          <img src="src/img/escudo-azul-amarelo-teste.png" alt="Logo" />
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar Moderna com Transição</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="semiCirculo.css" />
+  <link rel="stylesheet" href="luzes.css" />
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="sobre.css" />
+  <link rel="stylesheet" href="testemunhas.css" />
+  <link rel="stylesheet" href="faqs.css" />
+  <link rel="stylesheet" href="servicos.css" />
+  <link rel="stylesheet" href="planos.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
 
-        <!-- Links centralizados (desktop) -->
-        <div class="nav-links">
-          <a href="#">Início</a>
-          <a href="#">Sobre</a>
-          <a href="#">Serviços</a>
-          <a href="#">FAQs</a>
-        </div>
+<body>
+  <nav class="navbar">
+    <div class="nav-top">
+      <!-- Logo -->
+      <a href="#" class="nav-title">
+        <img src="src/img/escudo-azul-amarelo-teste.png" alt="Logo" />
+      </a>
 
-        <button class="nav-btn">Login</button>
-
-        <!-- Menu mobile (hamburger) -->
-        <div class="hamburger" id="hamburger">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
-
-      <!-- Menu mobile com links e botão -->
-      <div class="nav-mobile" id="navMobile">
+      <!-- Links centralizados (desktop) -->
+      <div class="nav-links">
         <a href="#">Início</a>
         <a href="#">Sobre</a>
         <a href="#">Serviços</a>
         <a href="#">FAQs</a>
-        <a class="nav-btn-mobile">Login</a>
       </div>
-    </nav>
 
-    <section class="hero">
-      <h1>Plataforma <span class="highlight">Lumen</span></h1>
-      <p class="subtext">
-        Do caos à clareza: bem-vindo à nova era da gestão pública.
-      </p>
-    </section>
+      <button class="nav-btn">Login</button>
 
-    <!--SEMI CIRCULO-->
-    <div class="halo">
-      <svg viewBox="0 -300 1300 800" xmlns="http://www.w3.org/2000/svg">
-        <!--antes estava 0 -100 1300 500-->
-        <defs>
-          <linearGradient
-            id="neonBlueGradient"
-            x1="0%"
-            y1="0%"
-            x2="100%"
-            y2="0%"
-          >
-            <stop offset="0%" stop-color="#3CA7FF" stop-opacity="0" />
-            <stop offset="20%" stop-color="#3CA7FF" stop-opacity="0.3" />
-            <stop offset="50%" stop-color="#3CA7FF" stop-opacity="1" />
-            <stop offset="80%" stop-color="#3CA7FF" stop-opacity="0.3" />
-            <stop offset="100%" stop-color="#3CA7FF" stop-opacity="0" />
-          </linearGradient>
-        </defs>
-
-        <path
-          d="M 50 500 A 600 500 0 0 1 1250 500"
-          fill="none"
-          stroke="url(#neonBlueGradient)"
-          stroke-width="3"
-          class="neon-glow"
-        />
-        <!--antes estava d="M 50 380 A 600 380 0 0 1 1250 380"-->
-      </svg>
+      <!-- Menu mobile (hamburger) -->
+      <div class="hamburger" id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
 
-    <section id="sobre">
-      <div id="cardsSobre">
-        <div class="cardLinha">
-          <div class="cardInfo-menor">
-            <div class="cardicon">
-              <div class="icon-eye">
-                <svg
-                  width="30"
-                  height="30"
-                  fill="none"
-                  stroke="#4480C4"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>
-              </div>
-              <h3>Conheça a Lumen</h3>
-              <p>
-                LUMEN é a plataforma SaaS que blinda e automatiza a gestão das
-                contratações públicas, garantindo conformidade total com a Lei
-                14.133/2021. Segurança jurídica e eficiência para sua
-                prefeitura.
-              </p>
-            </div>
-          </div>
+    <!-- Menu mobile com links e botão -->
+    <div class="nav-mobile" id="navMobile">
+      <a href="#">Início</a>
+      <a href="#">Sobre</a>
+      <a href="#">Serviços</a>
+      <a href="#">FAQs</a>
+      <a class="nav-btn-mobile">Login</a>
+    </div>
+  </nav>
 
-          <div class="cardInfo-menor">
-            <div class="cardicon">
-              <div class="icon-eye">
-                <img
-                  src="data:image/png;base64,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"
-                  alt="sword"
-                  width="40"
-                  height="40"
-                />
-              </div>
-              <h3>Lumen: 7 Espadas da Boa Gestão</h3>
-              <p>
-                Sete módulos integrados cobrem todas as etapas da contratação
-                pública: planejamento, estratégia, especificações, riscos,
-                edital, contrato e encerramento.
-              </p>
-            </div>
-          </div>
+  <section class="hero">
+    <h1>Plataforma <span class="highlight">Lumen</span></h1>
+    <p class="subtext">
+      Do caos à clareza: bem-vindo à nova era da gestão pública.
+    </p>
+  </section>
 
-          <div class="cardInfo-menor">
-            <div class="cardicon">
-              <div class="icon-eye">
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD9klEQVR4nO2YT+hUVRTHp+yPRu0qWmkLCcuMoE3ZYph3zqhpEFED2qJNUAbRokUtz3mTipYuJF0ILtSfILq0sFrI4Jzzfm6sjKSMkkCztCCzIA3/jJw37/l7Pn7j3Ddz5zcjzoG7effdc+/n3XO/59xXKo3tNjIMoxVI8iuynApCeaF0qxqynELWljUgPTnEhejbyLotaTuB5SCSHgOWs8ByBVkvIcnPyLIHQn3lmW1H7s6Nb2XbMEHO5RdzswYsvwDJ66VS646RAqmSPg0UvQss/yPrv0i6vErRk2VqPFLbt2+W7QDWDz8OpO8Byw8ZoINLaHL+yICY2SFNF3KzA2tgAcsbyPpn/D7JfyMFAqT7Mwd2f7f3l61tPgQsE9OGH+l2YPkSSL4H0r8SnxdtN4F1L5K8tmzzgXu9Q1Q+jOYB6eV4sna7bM9cxgI1HytyvjJheRZJ3skLR18GLGsT5xPpV7ZnruPzi4xDL4xWBNR8qkrRw2VqzH6RjtyH9clFyPIBsHyXAfqpGsrLfUPU6Ng9SHLGnFYoWmwtif0z1tcLiMsYCPUlC73MuAaG0dJUCQtbQNHKJIaPXp+E9Gj8ZSlaOSgQszI17rLwyso/kGqpFwOWQ8kBXZ0+C1jeSrb9kIuPflSLqHUnsp5oj40rBCkMEVDzCSS5iiT/LN6gD6TPy9S4H0n+jp3XJxcNEgStTptSu+WFIZIFbG1/ef0k3wekW5Kt3jJQEJLPMmM/LcoQf3VgOW8OLIvn+yt1WZiE13l7dxAglT5kf2py0tXdzkF6fuzMDAIESdclu77renIlXVcQRL7upkypoiHrt75BahnZh1CfS2UfSP9wzvrVsPm8yyDLusByOs0xPkGQm6vyso+sX7V9NFc5gSDJ7rYTWVMk63sFIWkma3gzL/vW19VBmRoPIusFuzAtpcOPOkw4Nz2QVm74AAl8yL7VOq4Vbr4yDkjf9wGC/cr+DVm0QPKxd5NFnjAf/YBkZb9Sl4U9yX4C8mMvZXcSu8f7BXEpf8BF9gOKXu0VpFO5XQTEpSANpilkOxFPFN8N3dHJnyuI6xWhlrtadAR5dtPkHCD5ogDEAbsc9QtS5NIGDrIfmyVCIN1o0toJIO4j+ajbBcsFxGS/SD1VydRhNrbb+yX7zYMsm5LYtQvOOWD5xiCXULSgqwNHEJNu37Lv3bqBDEr2hwNCcty37Hs3l9Cyf8a+Zd+7OasW6S6fsj80EJN9ZP3cl+wPDcTMpBxYP/Yh+0MF8Sn7IwEykjYGGTUb78jYbler2U2NZQOQ/tZzwZdPdiyngXT9jCY7m9AXwDTZe/1MgnjbiWna7zMGMkCI1i1dAYytNGXXAKJ1zkvnypX0AAAAAElFTkSuQmCC"
-                  alt="scales--v1"
-                  width="34"
-                  height="34"
-                />
-              </div>
-              <h3>Diferenciais que Fazem a Diferença</h3>
-              <p>
-                Reduza 92% das autuações, assegure conformidade total com a Lei
-                14.133/2021 e a LGPD, e fortaleça a defesa técnica de servidores
-                e gestores.
-              </p>
-            </div>
-          </div>
-        </div>
+  <!--SEMI CIRCULO-->
+  <div class="halo">
+    <svg viewBox="0 -300 1300 800" xmlns="http://www.w3.org/2000/svg">
+      <!--antes estava 0 -100 1300 500-->
+      <defs>
+        <linearGradient id="neonBlueGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#3CA7FF" stop-opacity="0" />
+          <stop offset="20%" stop-color="#3CA7FF" stop-opacity="0.3" />
+          <stop offset="50%" stop-color="#3CA7FF" stop-opacity="1" />
+          <stop offset="80%" stop-color="#3CA7FF" stop-opacity="0.3" />
+          <stop offset="100%" stop-color="#3CA7FF" stop-opacity="0" />
+        </linearGradient>
+      </defs>
 
-        <div class="cardLinha">
-          <div class="cardInfo-maior">
-            <div class="cardicon">
-              <div class="icon-eye">
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFNklEQVR4nNWaa4gcRRCA1/dbUBE1imIEn+CD+CJR1p3uPQ8NKMhhBBEkBP8ERP2j+KiavdyJqFEJXHxFEIKGiw/EkBCirDdVe7figcQLGjRKDtFgJIZLMDk13krNzt6N7OxO99zMrjY0HHvdM/V1VVdVV08uN48GUDu6CNyjkF9SyGMK6ScNdEghTSmkLxXyI42x8nf9N5oKxsjYUQ202nGpKM/KdbrJSx2k5Rp5UiPX2vXGnLhxGmi3xsqDHQPKQ/lcBfxZrGC2IHO97AyMnZMphLNq9HwNtMtCqCQgNf8dwAsygVj02vhxCrhqJVBSEOSaAh7vgx3Hpw6ikR6zFWY+IFpgQs5iXi0P5WM1evdppI3iaToNov130kaRQWRJBKGAbtPAOxIJkBYIhrVDEyKTLcQDGvmv+b48TRBd3zdHNPIKIwjx5RpoJo0Xpw2i6+Y2IwvdFqLQz5do5INJXlCAymINdEvmIOjDHFBAC1trA2hTQpV/K/PzUL2gIyDo948jIRzwrkxiUgp4uggVZ9YsLUFaaVIbmFgPVC6P2BsMFg85FETfN2UBZL4a/PysqNwrDqQXqqf785H22S8iPdUEooA+MZksKxgxd6FktlHj40Ak8w1A3rAGQdraDCJptcHkoustWQrjJxf6Kxc54N2tkdcppD9ajY8DUcjvy/9vXzVynqkMoT4ZZVqHre3UoMdudt+der11zXqXaqCvLDTye4Rp8XRXQOoC7XNg9EYZ1zc8fIykJAp4WAH/IMLaguztFkgor3o4KuNt49X2RIFUuwoy1ycV8AviBCRAF5/feorj8q3RY6nSvEeAX/2PgNRMu0Je0wRSBL7//waige9oAumB0TM10J8a6UcNNKSQ79WlsSvufJbOyOVqRy1+jk8TlytVEw08qJG3dxnksISBJhBfK653k3iNnGGTFMEPZP4CdBgEaH1b4cRrKJfvUkhr/ToU8F6F9LefcSJ9JwHMQXpIEsRZIdvkSlmAKOCqOIGWEBpopUL6xfBhRzTQe6pUuc5xudAxEKD1eSif2hKiUOLL/JVP2QTSAlFII7I/Q89b0VOiRU0gCmkgdTtOAKKApwNzntBAGxTwoxJPGs/pHfDOlvwu0M5QFMhIt0EKEZl1GEABoezVkJYmovbHzm6DFF1viRQCxeWLqUucUEhPK6RPo4ohkqNFaWSircrdyg1Sk3Wgsizj2m/Nwgx/bgYBHm47Efj6f413+R4F/Fs3QTTytiaQokt97UFoJrjfeKIRUSX1jqu6ZAniIC2PDITGhxrZT0AXBntrZTdAFNI3N784elKkZ+gp0TUaeb/hg76Qeqx/EPIvaToKsj8yhoSbA97VkooYqRYqy+pa4VLHQIB2yYLnTFrvK5tP0EjvxmoF+AMZr4C0LUjCetY6kc0IIvTiLSarE2hkgS1Iw2GEA5yO729bQVic4Q/K2DyUT7QFKfaPXBxo82sLkO+tQUwvdiQatz5TtwaRg5sPgrzGYn8csNdITKQ37S1BgN+R34vA1xpn3UA7E2iEn8kURKqTc7FoyAyEB61BgjP87qxAApiPZoMx8ra4AFivHyRokiiaBsgkIIG5PN6AUUhrW1xtbJn3vXu90s5jGYLMNGCk1eMLb/a/bQF+uVFKTa3JjaoCeivIx4wvShvzDcZ+mNnXDq2aRn4yAxDp2zv6lZBUMUzv4C1A9hRKdFXHIOZg/ItPSgUEaINc9OS61cQMFHhLFdDr8hGMnBiD4Par705DtVntekq8T1AhmfJLrkCrxTOmIcw/l7b/PEXLf6oAAAAASUVORK5CYII="
-                  alt="brain"
-                  width="38"
-                  height="38"
-                />
-              </div>
-              <h3>Por que Escolher a Lumen?</h3>
-              <p>
-                A LUMEN transforma a gestão pública com segurança jurídica,
-                inteligência normativa e tecnologia de ponta. Reduza em até 92%
-                as autuações por falhas documentais, automatize documentos
-                complexos em minutos e garanta total conformidade com a Lei
-                14.133/2021. Blindagem jurídica, economia de tempo e decisões
-                guiadas por dados — tudo em uma só plataforma pensada para
-                proteger o gestor e fortalecer o servidor. LUMEN é eficiência
-                com responsabilidade. Escolha evoluir a gestão pública com quem
-                entende os seus desafios.
-              </p>
-            </div>
-          </div>
+      <path d="M 50 500 A 600 500 0 0 1 1250 500" fill="none" stroke="url(#neonBlueGradient)" stroke-width="3"
+        class="neon-glow" />
+      <!--antes estava d="M 50 380 A 600 380 0 0 1 1250 380"-->
+    </svg>
+  </div>
 
-          <div class="cardInfo-menor">
-            <div class="cardicon">
-              <div class="icon-eye">
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADEUlEQVR4nNWZO2gUURSGb8BCER9gISj4wAeICD6aYBOy90wSUUuJBisLraxEEAvP2YkGRYOmiOCjidrYaKEgMUXMnrO7EQwqBhWEWERRiAgGJYmvlbu7SNhkZmd357U//LDFLPN/c865M3NHqQDU3JleCyg2kIxo4m/Gxd9JQF6j4q5WzK4D4h6NMg0kuXmN/FOj3NKY2qzipuZO2QAkfUDyyxFgrs2xfea/UedXYD/ZBCg3zVWuAGBuhYhvtGBmY+gALTbvKrSH/K4aoMSa+A+QPNDIEGj4xNnMaiA+oVFe+BXeBeq5ORegrPIlvOnfBPExIBkoXrFAAaAUyFQc5bFGPlrRLCXOZVdqknbTsxplLOzgUB5sLJ+NpN1kdQSJOihUaEcQTTwTdTjw7ilnEJSvMQiY8+gJl9bi8RgEzHmxJn7vDIL8NuqA4NUoo27DPlI3FUEZdgMZqJ+K8EOXYefrdVSRK24zcqpuQEiOO4JYST4QdUDw6ESS9ziCJHBoZ/20Vsr5xWz3BVni56N5YEaebMLBBY4ghYEP/jG95moQ97tC5AeepDf+FZEz5UGQOyIPSu62MJ3wtpUTg7Dg7CnrYv/isiCFqshoDALnHHxfeZVGphgEzs1r5A7PIM02b408MM212fhrw+GlnkGKVXkdQ5B7FUHkQUhORh0cqlmtStWEg8s1yvfYVIP4lVK5BlWNAPlqfNqKj1QFkQexs1ui2JiDUiN/aMLBhaoWaeLbdV2N2Xd61+8dwc/Gm7JPul6lUS5FVpFkeq/yS/kVjPhj+NWQu8pvmSsTKgjyF9eN6ppgkO+EBZLA9EEVlIot9i4EkGsqaIGd2aaJfwQI8bKxO7NIhSEL5TAg/w1gLj5bnUPrVZgClNN+QuSrjNwYKsR/GOIeXyBQpjWm2lR0yjVokss1VmLGSvJ+FQcBSleVMzEJyXSripOAUocqW814XNvpHSqOslC2m09i5dtJsoHdtf2SCQgkjxxaySzZvTW/W4Sp4ieKiVkgnzSm9ql6lO56ugKIu/OvAeefLQvyZP8AvyVNvSKonNQAAAAASUVORK5CYII="
-                  alt="shield"
-                  width="34"
-                  height="34"
-                />
-              </div>
-              <h3>Impacto Jurídico Garantido</h3>
-              <p>
-                Conhecemos a rotina do servidor e gestor, dominamos o controle
-                externo e os riscos reais. Com visão pública e tecnologia,
-                oferecemos um sistema ético onde a IA apoia decisões com
-                segurança e controle total.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="servicos">
-      <h2 class="tituloServicos">Essa é uma plataforma indicada para</h2>
-
-      <div id="containerServicos">
-        <div class="cardservico">
+  <section id="sobre">
+    <div id="cardsSobre">
+      <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="cardLinha">
+        <div class="cardInfo-menor">
           <div class="cardicon">
-            <div class="icon-box">
-              <img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABO0lEQVR4nO2VPU7DQBCFtyTyjItYYYb8XACJsDMGCppABVFaLkKBaJE4EAgh6DgCcIZAAQ0FoUMCtIlDReLEXisg/KRpRk/z7Tx7bWNKTVFA7WUkPUXSO2B9Q9ZnZLlBlsNqdSs0RQjYHgDLK7J+/lzyFK7onncosn4MASRnwLZD1A5cBRTvIOt5An9Hinve4oXxpqRHEw9Hcuw8QPqC9c0oNxjdM002TfMC60XiPckPZr0fbsK2k+YNKN4dbS23ucHAOnDDarVVSPNG0TaODqmD3GBM3tqi/IsHI8U9JH2cfF/nLNIHZNudAeyMnqDfcOnPHJXvMiX4V0YNLJeV5nqj0lhrAulV1v7cYDdg3F+qb7Sy9v8O2MXlhrkhQHqdtV9ep9So/8mXixb2k7Bdr3CSfsiynwouZQrSF0Nw69ytZHfOAAAAAElFTkSuQmCC"
-                alt="password--v1"
-              />
+            <div class="icon-eye">
+              <svg width="30" height="30" fill="none" stroke="#4480C4" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
             </div>
-            <h3>Segurança Jurídica</h3>
+            <h3>Conheça a Lumen</h3>
             <p>
-              Com a Lumen, você reduz até 92% das autuações e garante proteção
-              jurídica total aos gestores, seguindo a Lei 14.133/2021, LGPD e
-              jurisprudência atualizada.
+              Lumen é a plataforma SaaS que blinda e automatiza a gestão das
+              contratações públicas, garantindo conformidade total com a Lei
+              14.133/2021. Segurança jurídica e eficiência para sua
+              prefeitura.
             </p>
           </div>
         </div>
 
-        <div class="cardservico">
+        <div class="cardInfo-menor">
           <div class="cardicon">
-            <div class="icon-box">
+            <div class="icon-eye">
               <img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACrklEQVR4nO2ZTWgTURDHJ6lSk30vMYRmZtvQKuQi0qQzz4AfaEVBRFB6aa/2aC+i4MlDEbzo0R4E0ZN48eBBLwp60IMgCqIHEcGDSFFB/KAoStVWXkoxedlqsW3Mk/3BXrK7szs7/5k38wIQExMTExPzf5MI0OzMEO8FGO4AX9HIZzXJrD0UykXwEY28f96JuYO/A0ASfCKXM1mNMlnviEK5D76hSS640cjQQBV8IkDZpUlmGh2R0+ATYWjSivi5I6lnUNycAp9QJBNOJH6oULaDT+gCb7G50BANkgnwilKpU6M8cST1Ip/fqsEnNMkpR1IzmdDsAZ9Id1cGNPG0U27Pg18MrlLIDx0nXmV7+3PgE4pk3JHUrArNEPiEIt6gkb80JjhfAs9IKpK7DdFAfhtguQA+oUmOuZIKUEbAJ7JYXq9IPjkL3zXwjKRGudPoBH9MFSs9K/I0RbxDk9zUxJdzoeldPrtmzJWURhmFFaFU6lQo7+vq+usM8aalmrUfRBFPOW3IdVgpdHc1784DNU0X+MBS7NqXdiQ1tZzR/uPQXz+laTSH4S/QZA42LXxkxqAFJDTyiWZnapo+Z1uLxRpKd1VJIb9zbNy2z4BWoVFGmxu62gp8Y7Ettka54tz7OdPFJWg1QYF3K5QPEdF5nOrpL/72XpSRCIkebd3bOwRY2WgHnQiZTdo2HBYsGvzGSfB7/3zHMF3TujxoTlpbUs0+93rbADpOf7UfBNoBxHKgSK5GyOWbIj40f511rMnhghyH9mK4QxGfiapo9vdsX2WtRn7pnHsEYFZDO6JDOWK3a6LyxonW9EJ51Dao0AzZchq53vxy7CT4QIYGqm51qhuWnkLf4BrwhSxW1rn7UnO7hGYb+EbWJjnJrbpGcxw8JmFnGe/+AoiJiYmBVvITcJxOL7HevEoAAAAASUVORK5CYII="
-                alt="checkmark--v1"
-                width="25"
-                height="25"
-              />
+                src="data:image/png;base64,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"
+                alt="sword" width="40" height="40" />
             </div>
-            <h3>Eficiência na Gestão</h3>
+            <h3>Lumen: 7 Espadas da Boa Gestão</h3>
             <p>
-              Gere DFD, ETP, Termo de Referência e Matriz de Riscos com
-              rastreabilidade, versionamento e integração total — mais
-              agilidade, menos erros.
+              Sete módulos integrados cobrem todas as etapas da contratação
+              pública: planejamento, estratégia, especificações, riscos,
+              edital, contrato e encerramento.
             </p>
           </div>
         </div>
 
-        <div class="cardservico">
+        <div class="cardInfo-menor">
           <div class="cardicon">
-            <div class="icon-box">
+            <div class="icon-eye">
               <img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB4ElEQVR4nO2ZzytEURTHL0nx7hkNZs4ZycqGwjvnpSSlZGWv/AX+BVtLW0v/gj0WFpSNjaREWShpslGKRMLTLQvm13vz8z7jfupb0zTndT733nOnZpRy/B86PeQVQLkwMa/Ne+ov4WX9RY18AiRhQc41BctKqQ6VZCDjzwLKYQmBX9HExx7KgkoaXjaYAOLtKIES2U+RP227f6WJx74FPmuQ+CXUm/GnWi6QzgUjgLIFxO91CvzMh1mUVIZHmy6gyc8AyQagvDZQoCD8ZhapZ4CHGi6QGp7pB+R1TfzYPIGCCwH5WRNvejiZrVsAcdLTyGsa5aFVAlB0w8mTOQXpdNBXvcH4eLfOySoQ39kSgOIdujeLqoZneuIodJovLE1ybbtxKBeUW7PISs13lbUA5CPrjVJcIT4qL2K7Oaou7S/iSCpQ4xa3ui4SQH6J/WDkF1t1kWiUvbgP1ii7tuoi6R0McqYg+qG8Yz5rqy42tZ7VVtdF4kTI7UjojlYl3IyQm5HQzUgl3IyQm5HQzUgl3IyQm5GwKTPisAlQsAQk+dg/AtjNB6Ccmr/8ikQ08k0CGgyrCx+U2BHbTdWUfFuLfLaHCPJlAhoL654RnQvmNMmV/eYkTszpOSt5azkcqqF8AdTkVfwsXz0CAAAAAElFTkSuQmCC"
-                alt="museum"
-              />
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD9klEQVR4nO2YT+hUVRTHp+yPRu0qWmkLCcuMoE3ZYph3zqhpEFED2qJNUAbRokUtz3mTipYuJF0ILtSfILq0sFrI4Jzzfm6sjKSMkkCztCCzIA3/jJw37/l7Pn7j3Ddz5zcjzoG7effdc+/n3XO/59xXKo3tNjIMoxVI8iuynApCeaF0qxqynELWljUgPTnEhejbyLotaTuB5SCSHgOWs8ByBVkvIcnPyLIHQn3lmW1H7s6Nb2XbMEHO5RdzswYsvwDJ66VS646RAqmSPg0UvQss/yPrv0i6vErRk2VqPFLbt2+W7QDWDz8OpO8Byw8ZoINLaHL+yICY2SFNF3KzA2tgAcsbyPpn/D7JfyMFAqT7Mwd2f7f3l61tPgQsE9OGH+l2YPkSSL4H0r8SnxdtN4F1L5K8tmzzgXu9Q1Q+jOYB6eV4sna7bM9cxgI1HytyvjJheRZJ3skLR18GLGsT5xPpV7ZnruPzi4xDL4xWBNR8qkrRw2VqzH6RjtyH9clFyPIBsHyXAfqpGsrLfUPU6Ng9SHLGnFYoWmwtif0z1tcLiMsYCPUlC73MuAaG0dJUCQtbQNHKJIaPXp+E9Gj8ZSlaOSgQszI17rLwyso/kGqpFwOWQ8kBXZ0+C1jeSrb9kIuPflSLqHUnsp5oj40rBCkMEVDzCSS5iiT/LN6gD6TPy9S4H0n+jp3XJxcNEgStTptSu+WFIZIFbG1/ef0k3wekW5Kt3jJQEJLPMmM/LcoQf3VgOW8OLIvn+yt1WZiE13l7dxAglT5kf2py0tXdzkF6fuzMDAIESdclu77renIlXVcQRL7upkypoiHrt75BahnZh1CfS2UfSP9wzvrVsPm8yyDLusByOs0xPkGQm6vyso+sX7V9NFc5gSDJ7rYTWVMk63sFIWkma3gzL/vW19VBmRoPIusFuzAtpcOPOkw4Nz2QVm74AAl8yL7VOq4Vbr4yDkjf9wGC/cr+DVm0QPKxd5NFnjAf/YBkZb9Sl4U9yX4C8mMvZXcSu8f7BXEpf8BF9gOKXu0VpFO5XQTEpSANpilkOxFPFN8N3dHJnyuI6xWhlrtadAR5dtPkHCD5ogDEAbsc9QtS5NIGDrIfmyVCIN1o0toJIO4j+ajbBcsFxGS/SD1VydRhNrbb+yX7zYMsm5LYtQvOOWD5xiCXULSgqwNHEJNu37Lv3bqBDEr2hwNCcty37Hs3l9Cyf8a+Zd+7OasW6S6fsj80EJN9ZP3cl+wPDcTMpBxYP/Yh+0MF8Sn7IwEykjYGGTUb78jYbler2U2NZQOQ/tZzwZdPdiyngXT9jCY7m9AXwDTZe/1MgnjbiWna7zMGMkCI1i1dAYytNGXXAKJ1zkvnypX0AAAAAElFTkSuQmCC"
+                alt="scales--v1" width="34" height="34" />
             </div>
-            <h3>Governança e Inteligência</h3>
+            <h3>Diferenciais que Fazem a Diferença</h3>
             <p>
-              Com a Lumen, você fortalece sua equipe, monitora com painéis
-              inteligentes e garante processos auditáveis para melhorar seus
-              indicadores.
+              Reduza 92% das autuações, assegure conformidade total com a Lei
+              14.133/2021 e a LGPD, e fortaleça a defesa técnica de servidores
+              e gestores.
             </p>
           </div>
         </div>
       </div>
 
-      <h1 class="tituloPlanos">Escolha o Plano Ideal para Sua Necessidade</h1>
-      <div id="containerPlanos">
-        <div class="cardPlanos">
-          <div class="icon-box-planos">
-            <p>1</p>
+      <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200"  class="cardLinha">
+        <div class="cardInfo-menor">
+          <div class="cardicon">
+            <div class="icon-eye">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADEUlEQVR4nNWZO2gUURSGb8BCER9gISj4wAeICD6aYBOy90wSUUuJBisLraxEEAvP2YkGRYOmiOCjidrYaKEgMUXMnrO7EQwqBhWEWERRiAgGJYmvlbu7SNhkZmd357U//LDFLPN/c865M3NHqQDU3JleCyg2kIxo4m/Gxd9JQF6j4q5WzK4D4h6NMg0kuXmN/FOj3NKY2qzipuZO2QAkfUDyyxFgrs2xfea/UedXYD/ZBCg3zVWuAGBuhYhvtGBmY+gALTbvKrSH/K4aoMSa+A+QPNDIEGj4xNnMaiA+oVFe+BXeBeq5ORegrPIlvOnfBPExIBkoXrFAAaAUyFQc5bFGPlrRLCXOZVdqknbTsxplLOzgUB5sLJ+NpN1kdQSJOihUaEcQTTwTdTjw7ilnEJSvMQiY8+gJl9bi8RgEzHmxJn7vDIL8NuqA4NUoo27DPlI3FUEZdgMZqJ+K8EOXYefrdVSRK24zcqpuQEiOO4JYST4QdUDw6ESS9ziCJHBoZ/20Vsr5xWz3BVni56N5YEaebMLBBY4ghYEP/jG95moQ97tC5AeepDf+FZEz5UGQOyIPSu62MJ3wtpUTg7Dg7CnrYv/isiCFqshoDALnHHxfeZVGphgEzs1r5A7PIM02b408MM212fhrw+GlnkGKVXkdQ5B7FUHkQUhORh0cqlmtStWEg8s1yvfYVIP4lVK5BlWNAPlqfNqKj1QFkQexs1ui2JiDUiN/aMLBhaoWaeLbdV2N2Xd61+8dwc/Gm7JPul6lUS5FVpFkeq/yS/kVjPhj+NWQu8pvmSsTKgjyF9eN6ppgkO+EBZLA9EEVlIot9i4EkGsqaIGd2aaJfwQI8bKxO7NIhSEL5TAg/w1gLj5bnUPrVZgClNN+QuSrjNwYKsR/GOIeXyBQpjWm2lR0yjVokss1VmLGSvJ+FQcBSleVMzEJyXSripOAUocqW814XNvpHSqOslC2m09i5dtJsoHdtf2SCQgkjxxaySzZvTW/W4Sp4ieKiVkgnzSm9ql6lO56ugKIu/OvAeefLQvyZP8AvyVNvSKonNQAAAAASUVORK5CYII="
+                alt="shield" width="34" height="34" />
+            </div>
+            <h3>Impacto Jurídico Garantido</h3>
+            <p>
+              Conhecemos a rotina do servidor e gestor, dominamos o controle
+              externo e os riscos reais. Com visão pública e tecnologia,
+              oferecemos um sistema ético onde a IA apoia decisões com
+              segurança e controle total.
+            </p>
           </div>
-          <h3 class="titulo-premium">Lumen Individual</h3>
-
-          <ul class="lista-premium">
-            <li>Voltado a servidores públicos individuais</li>
-            <li>Etapas completas da contratação</li>
-            <li>Assistente inteligente com validação legal</li>
-            <li>Gestão para 1 município</li>
-            <li>Conformidade com a Lei 14.133</li>
-          </ul>
-
-          <button class="btn-premium">Solicitar Acesso</button>
         </div>
 
-        <div class="cardPlanos">
-          <div class="icon-box-planos">
-            <p>2</p>
+        <div class="cardInfo-maior">
+          <div class="cardicon">
+            <div class="icon-eye">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFNklEQVR4nNWaa4gcRRCA1/dbUBE1imIEn+CD+CJR1p3uPQ8NKMhhBBEkBP8ERP2j+KiavdyJqFEJXHxFEIKGiw/EkBCirDdVe7figcQLGjRKDtFgJIZLMDk13krNzt6N7OxO99zMrjY0HHvdM/V1VVdVV08uN48GUDu6CNyjkF9SyGMK6ScNdEghTSmkLxXyI42x8nf9N5oKxsjYUQ202nGpKM/KdbrJSx2k5Rp5UiPX2vXGnLhxGmi3xsqDHQPKQ/lcBfxZrGC2IHO97AyMnZMphLNq9HwNtMtCqCQgNf8dwAsygVj02vhxCrhqJVBSEOSaAh7vgx3Hpw6ikR6zFWY+IFpgQs5iXi0P5WM1evdppI3iaToNov130kaRQWRJBKGAbtPAOxIJkBYIhrVDEyKTLcQDGvmv+b48TRBd3zdHNPIKIwjx5RpoJo0Xpw2i6+Y2IwvdFqLQz5do5INJXlCAymINdEvmIOjDHFBAC1trA2hTQpV/K/PzUL2gIyDo948jIRzwrkxiUgp4uggVZ9YsLUFaaVIbmFgPVC6P2BsMFg85FETfN2UBZL4a/PysqNwrDqQXqqf785H22S8iPdUEooA+MZksKxgxd6FktlHj40Ak8w1A3rAGQdraDCJptcHkoustWQrjJxf6Kxc54N2tkdcppD9ajY8DUcjvy/9vXzVynqkMoT4ZZVqHre3UoMdudt+der11zXqXaqCvLDTye4Rp8XRXQOoC7XNg9EYZ1zc8fIykJAp4WAH/IMLaguztFkgor3o4KuNt49X2RIFUuwoy1ycV8AviBCRAF5/feorj8q3RY6nSvEeAX/2PgNRMu0Je0wRSBL7//waige9oAumB0TM10J8a6UcNNKSQ79WlsSvufJbOyOVqRy1+jk8TlytVEw08qJG3dxnksISBJhBfK653k3iNnGGTFMEPZP4CdBgEaH1b4cRrKJfvUkhr/ToU8F6F9LefcSJ9JwHMQXpIEsRZIdvkSlmAKOCqOIGWEBpopUL6xfBhRzTQe6pUuc5xudAxEKD1eSif2hKiUOLL/JVP2QTSAlFII7I/Q89b0VOiRU0gCmkgdTtOAKKApwNzntBAGxTwoxJPGs/pHfDOlvwu0M5QFMhIt0EKEZl1GEABoezVkJYmovbHzm6DFF1viRQCxeWLqUucUEhPK6RPo4ohkqNFaWSircrdyg1Sk3Wgsizj2m/Nwgx/bgYBHm47Efj6f413+R4F/Fs3QTTytiaQokt97UFoJrjfeKIRUSX1jqu6ZAniIC2PDITGhxrZT0AXBntrZTdAFNI3N784elKkZ+gp0TUaeb/hg76Qeqx/EPIvaToKsj8yhoSbA97VkooYqRYqy+pa4VLHQIB2yYLnTFrvK5tP0EjvxmoF+AMZr4C0LUjCetY6kc0IIvTiLSarE2hkgS1Iw2GEA5yO729bQVic4Q/K2DyUT7QFKfaPXBxo82sLkO+tQUwvdiQatz5TtwaRg5sPgrzGYn8csNdITKQ37S1BgN+R34vA1xpn3UA7E2iEn8kURKqTc7FoyAyEB61BgjP87qxAApiPZoMx8ra4AFivHyRokiiaBsgkIIG5PN6AUUhrW1xtbJn3vXu90s5jGYLMNGCk1eMLb/a/bQF+uVFKTa3JjaoCeivIx4wvShvzDcZ+mNnXDq2aRn4yAxDp2zv6lZBUMUzv4C1A9hRKdFXHIOZg/ItPSgUEaINc9OS61cQMFHhLFdDr8hGMnBiD4Par705DtVntekq8T1AhmfJLrkCrxTOmIcw/l7b/PEXLf6oAAAAASUVORK5CYII="
+                alt="brain" width="38" height="38" />
+            </div>
+            <h3>Por que Escolher a Lumen?</h3>
+            <p>
+              A LUMEN transforma a gestão pública com segurança jurídica,
+              inteligência normativa e tecnologia de ponta. Reduza em até 92%
+              as autuações por falhas documentais, automatize documentos
+              complexos em minutos e garanta total conformidade com a Lei
+              14.133/2021. Blindagem jurídica, economia de tempo e decisões
+              guiadas por dados — tudo em uma só plataforma pensada para
+              proteger o gestor e fortalecer o servidor. LUMEN é eficiência
+              com responsabilidade. Escolha evoluir a gestão pública com quem
+              entende os seus desafios.
+            </p>
           </div>
-          <h3 class="titulo-premium">Lumen Consultor</h3>
-
-          <ul class="lista-premium">
-            <li>Voltado a servidores públicos individuais</li>
-            <li>Etapas completas da contratação</li>
-            <li>Assistente inteligente com validação legal</li>
-            <li>Gestão para 1 município</li>
-            <li>Conformidade com a Lei 14.133</li>
-          </ul>
-
-          <button class="btn-premium">Solicitar Acesso</button>
-        </div>
-
-        <div class="cardPlanos">
-          <div class="icon-box-planos">
-            <p>3</p>
-          </div>
-          <h3 class="titulo-premium">Lumen Premio</h3>
-
-          <ul class="lista-premium">
-            <li>Voltado a servidores públicos individuais</li>
-            <li>Etapas completas da contratação</li>
-            <li>Assistente inteligente com validação legal</li>
-            <li>Gestão para 1 município</li>
-            <li>Conformidade com a Lei 14.133</li>
-          </ul>
-
-          <button class="btn-premium">Solicitar Acesso</button>
-        </div>
-
-        <div class="cardPlanos">
-          <div class="icon-box-planos">
-            <p>4</p>
-          </div>
-          <h3 class="titulo-premium">Lumen Governança</h3>
-
-          <ul class="lista-premium">
-            <li>Voltado a servidores públicos individuais</li>
-            <li>Etapas completas da contratação</li>
-            <li>Assistente inteligente com validação legal</li>
-            <li>Gestão para 1 município</li>
-            <li>Conformidade com a Lei 14.133</li>
-          </ul>
-
-          <button class="btn-premium">Solicitar Acesso</button>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="testemunhas">
-      <h2 class="tituloTestemunhas">Lorem ipsum</h2>
-      <div id="containerTestemunhas">
-        <div class="cardtestemunhas"></div>
+  <section id="servicos">
+    <h2 class="tituloServicos" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200">Essa é uma plataforma
+      indicada para</h2>
 
-        <div class="cardtestemunhas"></div>
-
-        <div class="cardtestemunhas"></div>
+    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200"  id="containerServicos">
+      <div class="cardservico">
+        <div class="cardicon">
+          <div class="icon-box">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABO0lEQVR4nO2VPU7DQBCFtyTyjItYYYb8XACJsDMGCppABVFaLkKBaJE4EAgh6DgCcIZAAQ0FoUMCtIlDReLEXisg/KRpRk/z7Tx7bWNKTVFA7WUkPUXSO2B9Q9ZnZLlBlsNqdSs0RQjYHgDLK7J+/lzyFK7onncosn4MASRnwLZD1A5cBRTvIOt5An9Hinve4oXxpqRHEw9Hcuw8QPqC9c0oNxjdM002TfMC60XiPckPZr0fbsK2k+YNKN4dbS23ucHAOnDDarVVSPNG0TaODqmD3GBM3tqi/IsHI8U9JH2cfF/nLNIHZNudAeyMnqDfcOnPHJXvMiX4V0YNLJeV5nqj0lhrAulV1v7cYDdg3F+qb7Sy9v8O2MXlhrkhQHqdtV9ep9So/8mXixb2k7Bdr3CSfsiynwouZQrSF0Nw69ytZHfOAAAAAElFTkSuQmCC"
+              alt="password--v1" />
+          </div>
+          <h3>Segurança Jurídica</h3>
+          <p>
+            Com a Lumen, você reduz até 92% das autuações e garante proteção
+            jurídica total aos gestores, seguindo a Lei 14.133/2021, LGPD e
+            jurisprudência atualizada.
+          </p>
+        </div>
       </div>
 
-      <div class="btnContainer">
-        <button class="btnTestemunhas">Começar</button>
+      <div class="cardservico">
+        <div class="cardicon">
+          <div class="icon-box">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACrklEQVR4nO2ZTWgTURDHJ6lSk30vMYRmZtvQKuQi0qQzz4AfaEVBRFB6aa/2aC+i4MlDEbzo0R4E0ZN48eBBLwp60IMgCqIHEcGDSFFB/KAoStVWXkoxedlqsW3Mk/3BXrK7szs7/5k38wIQExMTExPzf5MI0OzMEO8FGO4AX9HIZzXJrD0UykXwEY28f96JuYO/A0ASfCKXM1mNMlnviEK5D76hSS640cjQQBV8IkDZpUlmGh2R0+ATYWjSivi5I6lnUNycAp9QJBNOJH6oULaDT+gCb7G50BANkgnwilKpU6M8cST1Ip/fqsEnNMkpR1IzmdDsAZ9Id1cGNPG0U27Pg18MrlLIDx0nXmV7+3PgE4pk3JHUrArNEPiEIt6gkb80JjhfAs9IKpK7DdFAfhtguQA+oUmOuZIKUEbAJ7JYXq9IPjkL3zXwjKRGudPoBH9MFSs9K/I0RbxDk9zUxJdzoeldPrtmzJWURhmFFaFU6lQo7+vq+usM8aalmrUfRBFPOW3IdVgpdHc1784DNU0X+MBS7NqXdiQ1tZzR/uPQXz+laTSH4S/QZA42LXxkxqAFJDTyiWZnapo+Z1uLxRpKd1VJIb9zbNy2z4BWoVFGmxu62gp8Y7Ettka54tz7OdPFJWg1QYF3K5QPEdF5nOrpL/72XpSRCIkebd3bOwRY2WgHnQiZTdo2HBYsGvzGSfB7/3zHMF3TujxoTlpbUs0+93rbADpOf7UfBNoBxHKgSK5GyOWbIj40f511rMnhghyH9mK4QxGfiapo9vdsX2WtRn7pnHsEYFZDO6JDOWK3a6LyxonW9EJ51Dao0AzZchq53vxy7CT4QIYGqm51qhuWnkLf4BrwhSxW1rn7UnO7hGYb+EbWJjnJrbpGcxw8JmFnGe/+AoiJiYmBVvITcJxOL7HevEoAAAAASUVORK5CYII="
+              alt="checkmark--v1" width="25" height="25" />
+          </div>
+          <h3>Eficiência na Gestão</h3>
+          <p>
+            Gere DFD, ETP, Termo de Referência e Matriz de Riscos com
+            rastreabilidade, versionamento e integração total — mais
+            agilidade, menos erros.
+          </p>
+        </div>
       </div>
-    </section>
 
-    <section class="faqs"></section>
-
-
-    <!--FEIXES DE LUZ-->
-    <div class="light-container">
-      <div class="light-beam beam1"></div>
-      <div class="light-beam beam2"></div>
-      <div class="light-beam beam3"></div>
-      <div class="light-beam beam4"></div>
-      <div class="light-beam beam5"></div>
-      <div class="light-beam beam6"></div>
+      <div class="cardservico">
+        <div class="cardicon">
+          <div class="icon-box">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB4ElEQVR4nO2ZzytEURTHL0nx7hkNZs4ZycqGwjvnpSSlZGWv/AX+BVtLW0v/gj0WFpSNjaREWShpslGKRMLTLQvm13vz8z7jfupb0zTndT733nOnZpRy/B86PeQVQLkwMa/Ne+ov4WX9RY18AiRhQc41BctKqQ6VZCDjzwLKYQmBX9HExx7KgkoaXjaYAOLtKIES2U+RP227f6WJx74FPmuQ+CXUm/GnWi6QzgUjgLIFxO91CvzMh1mUVIZHmy6gyc8AyQagvDZQoCD8ZhapZ4CHGi6QGp7pB+R1TfzYPIGCCwH5WRNvejiZrVsAcdLTyGsa5aFVAlB0w8mTOQXpdNBXvcH4eLfOySoQ39kSgOIdujeLqoZneuIodJovLE1ybbtxKBeUW7PISs13lbUA5CPrjVJcIT4qL2K7Oaou7S/iSCpQ4xa3ui4SQH6J/WDkF1t1kWiUvbgP1ii7tuoi6R0McqYg+qG8Yz5rqy42tZ7VVtdF4kTI7UjojlYl3IyQm5HQzUgl3IyQm5HQzUgl3IyQm5GwKTPisAlQsAQk+dg/AtjNB6Ccmr/8ikQ08k0CGgyrCx+U2BHbTdWUfFuLfLaHCPJlAhoL654RnQvmNMmV/eYkTszpOSt5azkcqqF8AdTkVfwsXz0CAAAAAElFTkSuQmCC"
+              alt="museum" />
+          </div>
+          <h3>Governança e Inteligência</h3>
+          <p>
+            Com a Lumen, você fortalece sua equipe, monitora com painéis
+            inteligentes e garante processos auditáveis para melhorar seus
+            indicadores.
+          </p>
+        </div>
+      </div>
     </div>
 
-    <script>
-      const hamburger = document.getElementById("hamburger");
-      const navMobile = document.getElementById("navMobile");
+    <h1 data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" class="tituloPlanos">Escolha o Plano Ideal para Sua Necessidade</h1>
+    <div  id="containerPlanos">
+      <div class="cardPlanos">
+        <div class="icon-box-planos">
+          <p>1</p>
+        </div>
+        <h3 class="titulo-premium">Lumen Individual</h3>
 
-      hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        navMobile.classList.toggle("active");
-      });
-    </script>
-  </body>
+        <ul class="lista-premium">
+          <li>Voltado a servidores públicos individuais</li>
+          <li>Espadas 1 a 5: Planejamento, Estratégia, Referência Técnica, Riscos, Edital</li>
+          <li>Assistente inteligente com validação legal</li>
+          <li>Gestão para 1 município</li>
+          <li>Conformidade com a Lei 14.133</li>
+        </ul>
+
+        <button class="btn-premium">Solicitar Acesso</button>
+      </div>
+
+      <div class="cardPlanos">
+        <div class="icon-box-planos">
+          <p>2</p>
+        </div>
+        <h3 class="titulo-premium">Lumen Consultor</h3>
+
+        <ul class="lista-premium">
+          <li>Voltado a Consultores e Pequenas Assessorias</li>
+          <li>Possui todos os módulos do plano Individual</li>
+          <li>Assistência personalizada com precisão.</li>
+          <li>Gestão para 3 municípios</li>
+          <li>Otimização do tempo, padronização, maior assertividade</li>
+        </ul>
+
+        <button class="btn-premium">Solicitar Acesso</button>
+      </div>
+
+      <div class="cardPlanos">
+        <div class="icon-box-planos">
+          <p>3</p>
+        </div>
+        <h3 class="titulo-premium">Lumen Prêmio</h3>
+
+        <ul class="lista-premium">
+          <li>Para grandes Consultorias e Assessorias</li>
+          <li>Todos os módulos da Plataforma Lumen</li>
+          <li>Riscos previstos, decisões assertivas</li>
+          <li>Gestão para municípios ilimitados</li>
+          <li>Consultoria inteligente, controle total e resultados ilimitados</li>
+        </ul>
+
+        <button class="btn-premium">Solicitar Acesso</button>
+      </div>
+
+      <div class="cardPlanos">
+        <div class="icon-box-planos">
+          <p>4</p>
+        </div>
+        <h3 class="titulo-premium">Lumen Governança</h3>
+
+        <ul class="lista-premium">
+          <li>Voltado a Prefeituras e Consórcios</li>
+          <li>Acesso completo à Plataforma Lumen e suas 7 Espadas</li>
+          <li>Validação jurídica em tempo real para blindagem total</li>
+          <li>Gestão ilimitada</li>
+          <li>Painéis integrados, usuários ilimitados, controle jurídico e financeiro, governança eficiente.</li>
+        </ul>
+
+        <button class="btn-premium">Solicitar Acesso</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="testemunhas">
+    <h1 data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="tituloTestemunhas">Gestores que transformaram com a Lumen</h2>
+    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200"  id="containerTestemunhas">
+      <div class="cardtestemunhas"></div>
+
+      <div class="cardtestemunhas"></div>
+
+      <div class="cardtestemunhas"></div>
+    </div>
+
+    <div class="btnContainer">
+      <button class="btnTestemunhas">Começar</button>
+    </div>
+  </section>
+
+  <section class="faqs"></section>
+
+
+  <!--FEIXES DE LUZ-->
+  <div class="light-container">
+    <div class="light-beam beam1"></div>
+    <div class="light-beam beam2"></div>
+    <div class="light-beam beam3"></div>
+    <div class="light-beam beam4"></div>
+    <div class="light-beam beam5"></div>
+    <div class="light-beam beam6"></div>
+  </div>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navMobile = document.getElementById("navMobile");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMobile.classList.toggle("active");
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>

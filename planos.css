@@ -5,7 +5,7 @@
 }
 
 #containerPlanos {
-  margin-top: 130px;
+  margin-top: 200px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -121,31 +121,91 @@
 
 @media screen and (min-width: 321px) and (max-width: 376px)  {
     .tituloPlanos {
-        font-size: 26px;
-        margin-top: 150px;
+      font-size: 26px;
+      margin-top: 100px;
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-bottom: -50px;
     }
 
     .cardPlanos {
-        width: 280px;
-        height: auto;
+      margin-top: 40px;
+      width: 280px;
+      height: auto;
     }
 }
 
 @media screen and (min-width: 377px) and (max-width: 480px) {
   .tituloPlanos {
-    font-size: 28px;
-    margin-top: 160px;
+    font-size: 29px;
+    margin-top: 130px;
+    margin-bottom: -50px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 
   .cardPlanos {
-        width: 280px;
-        height: auto;
-    }
+    margin-top: 40px;
+    width: 280px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .tituloPlanos {
+    font-size: 42px;
+    margin-top: 130px;
+    margin-bottom: -40px;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .cardPlanos {
+    height: 800px;
+    margin-top: 60px;
+  }
+
+  .titulo-premium  {
+    font-size: 1.5rem;
+  }
+
+  .lista-premium {
+    font-size: 1.3rem;
+  }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1599px) {
    .cardPlanos {
-        width: 280px;
-        height: auto;
+        width: 290px;
+        height: 750px;
     }
+
+    
+  .titulo-premium  {
+    font-size: 1.3rem;
+  }
+
+  .lista-premium {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
+  .titulo-premium  {
+    font-size: 1.3rem;
+  }
+
+  .lista-premium {
+    font-size: 1.2rem;
+  }
+
+  .cardPlanos {
+    height: 700px;
+  }
 }

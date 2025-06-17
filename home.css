@@ -40,6 +40,7 @@
 
   .hero .subtext {
     font-size: 1.2rem;
+    max-width: 300px;
   }
 }
 
@@ -66,12 +67,12 @@
   }
 
   .hero h1 {
-    font-size: 3.7rem;
+    font-size: 4rem;
   }
 
   .hero .subtext {
-    font-size: 1.7rem;
-    max-width: 550px;
+    font-size: 1.9rem;
+    max-width: 500px;
   }
 }
 
@@ -100,7 +101,7 @@
   }
 
   .hero .subtext {
-    font-size: 2rem;
+    font-size: 3rem;
     max-width: 640px;
   }
 }
@@ -116,8 +117,8 @@
   }
 
   .hero .subtext {
-    font-size: 1.4rem;
-    max-width: 700px;
+    font-size: 1.8rem;
+    max-width: 600px;
   }
 }
 

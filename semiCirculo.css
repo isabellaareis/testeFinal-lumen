@@ -159,7 +159,7 @@ path.main {
 @media (min-width: 1920px) {
   .halo {
     position: absolute;
-    bottom: -25%;
+    bottom: -28%;
     left: 50%;
     transform: translateX(-50%);
     width: 80%; 
