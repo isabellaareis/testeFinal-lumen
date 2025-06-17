@@ -1,32 +1,151 @@
-
 .tituloPlanos {
-    font-size: 40px;
-    margin-top: 220px;
-    text-align: center;
+  font-size: 40px;
+  margin-top: 220px;
+  text-align: center;
 }
-  
 
 #containerPlanos {
-    margin-top: 130px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 40px;
-    display: flex;
-    justify-content: center;
+  margin-top: 130px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .cardPlanos {
-    width: 320px;
-    height: 450px;
-    color: white;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
-    padding: 2rem;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 0 10px rgba(232, 177, 9, 0.06);
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-top: 5.5rem;
+  width: 320px;
+  padding: 2.5rem 2rem 3.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  color: #ffffff;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  position: relative;
+  overflow: visible; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 1px solid rgba(0, 255, 255, 0.12);
+  border-top: 1px solid rgba(0, 255, 255, 0.08);
+}
+
+
+
+.titulo-premium {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+  color: #ffffff;
+  letter-spacing: 0.3px;
+}
+
+
+.lista-premium {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  color: #d8d8d8;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+}
+
+
+.lista-premium li + li {
+  margin-top: 0.7rem;
+}
+
+.btn-premium {
+  width: 100%;
+  padding: 0.9rem 0;
+  background: #4480C4;
+  border: none;
+  border-radius: 14px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 25px rgba(72, 128, 196, 0.4);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.btn-premium:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(72, 128, 196, 0.6);
+}
+
+.lista-premium li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  color: #4880C4; 
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.lista-premium li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.icon-box-planos {
+  position: absolute;
+  top: -38px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 55px;
+  height: 55px;
+  background-color: #4480C4; 
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.icon-box-planos p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+
+@media screen and (min-width: 321px) and (max-width: 376px)  {
+    .tituloPlanos {
+        font-size: 26px;
+        margin-top: 150px;
+    }
+
+    .cardPlanos {
+        width: 280px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 377px) and (max-width: 480px) {
+  .tituloPlanos {
+    font-size: 28px;
+    margin-top: 160px;
+  }
+
+  .cardPlanos {
+        width: 280px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+   .cardPlanos {
+        width: 280px;
+        height: auto;
+    }
 }

@@ -28,19 +28,41 @@
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+
+  .cardicon {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+.icon-box {
+ margin-top: -60px;
+  width: 48px;
+  height: 48px;
+  background-color: #E2B322; /* roxo padrão */
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box img {
+  width: 24px;
+  height: 24px;
+}
   
   /* === 321px até 376px === */
   @media screen and (min-width: 321px) and (max-width: 376px) {
     .tituloServicos {
-      font-size: 24px;
-      max-width: 260px;
-      margin-top: 150px;
+      font-size: 26px;
+      max-width: 280px;
+      margin: 100px auto 0;
       text-align: center;
     }
   
     #containerServicos {
       flex-direction: column;
-      gap: 80px;
+      gap: 100px;
     }
   
     .cardservico {
@@ -53,13 +75,15 @@
   /* === 377px até 480px === */
   @media screen and (min-width: 377px) and (max-width: 480px) {
     .tituloServicos {
-      font-size: 28px;
-      margin-top: 160px;
+      font-size: 30px;
+      max-width: 360px;
+      margin: 100px auto 0;
+      text-align: center;
     }
   
     #containerServicos {
       flex-direction: column;
-      gap: 25px;
+      gap: 100px;
     }
   
     .cardservico {
@@ -70,15 +94,17 @@
   
 /* === 768px até 991px (Tablet) === */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    .tituloServicos {
-      font-size: 32px;
-      margin-top: 180px;
+      .tituloServicos {
+      font-size: 45px;
+      max-width: 500px;
+      margin: 180px auto 0;
+      text-align: center;
     }
-  
+
     #containerServicos {
       flex-direction: column; /* <-- muda de linha para coluna */
       align-items: center;    /* <-- centraliza os cards */
-      gap: 30px;
+      gap: 100px;
     }
   
     .cardservico {
@@ -90,7 +116,7 @@
   /* === 1200px até 1599px === */
 @media screen and (min-width: 1200px) and (max-width: 1599px) {
     .tituloServicos {
-      font-size: 36px;
+      font-size: 46px;
       margin-top: 200px;
     }
   
@@ -104,7 +130,7 @@
   
     .cardservico {
       width: 400px;
-      height: 200px;
+      height: 240px;
     }
   }
   
