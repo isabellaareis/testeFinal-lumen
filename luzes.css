@@ -1,8 +1,13 @@
 
 .light-container {
-  width: 100%;
-  overflow: hidden;
-  z-index: 6;
+  position: fixed; /* ou absolute, se preferir */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* ESSENCIAL para cortar tudo fora da tela */
+  pointer-events: none;
+  z-index: -1;
 }
 
 .light-beam {
