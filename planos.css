@@ -15,6 +15,9 @@
 }
 
 .cardPlanos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   padding-top: 5.5rem;
   width: 320px;
   padding: 2.5rem 2rem 3.5rem;
@@ -62,6 +65,7 @@
 }
 
 .btn-premium {
+  margin-top: auto;
   width: 100%;
   padding: 0.9rem 0;
   background: #4480C4;
@@ -181,12 +185,23 @@
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1599px) {
-   .cardPlanos {
-        width: 290px;
-        height: 750px;
-    }
 
-    
+#containerPlanos {
+  max-width: 1000px;      
+  margin: 180px auto;         
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;              
+  padding: 40px 20px;     
+}
+
+.cardPlanos {
+  flex: 1 1 calc(45% - 20px);  
+  max-width: 420px;
+  padding: 2.5rem 2rem 3rem;
+  height: 580px;               
+}
   .titulo-premium  {
     font-size: 1.3rem;
   }

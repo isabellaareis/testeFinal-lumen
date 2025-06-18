@@ -20,17 +20,60 @@
 
 .cardtestemunhas {
   width: 380px;
-  height: 310px;
-  color: white;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
+  min-height: 310px;
+  color: #ffffff;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.04));
+   border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
   padding: 2rem;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   box-shadow: 0 0 10px rgba(232, 177, 9, 0.06);
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.perfil img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 2px solid #E8B109;
+  object-fit: cover;
+}
+
+.nome {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.estrela {
+  color: #E8B109;
+  margin-left: 4px;
+}
+
+.cargo {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.depoimento {
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.depoimento .aspas {
+  color: #E8B109;
+  font-size: 1.4rem;
 }
 
 .btnContainer {
@@ -41,14 +84,25 @@
 }
 
 .btnTestemunhas {
-  border-radius: 10px;
-  background-color: azure;
-  color: black;
-  width: 200px;
-  padding: 20px 30px;
-  border: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: 1px solid #E8B109;
+  border-radius: 12px;
   cursor: pointer;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 8px rgba(232, 177, 9, 0.4);
+  transition: all 0.3s ease;
 }
+
+.btnTestemunhas:hover {
+  background-color: rgba(232, 177, 9, 0.1);
+  box-shadow: 0 0 12px rgba(232, 177, 9, 0.6), 0 0 4px rgba(232, 177, 9, 0.5) inset;
+  color: #E8B109;
+  transform: translateY(-2px);
+}
+
 
 
 @media screen and (min-width: 321px) and (max-width: 376px) {
@@ -141,6 +195,11 @@
   .cardtestemunhas {
     width: 360px;
     height: 310px;
+  }
+
+  .btnTestemunhas {
+    width: 200px;
+    font-size: 18px;
   }
 }
 
