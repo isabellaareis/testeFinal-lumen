@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Plataforma Lumen</title>
+  <link rel="icon" type="image/png" href="src/img/escudo-azul-amarelo-teste.png" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="nav.css" />
   <link rel="stylesheet" href="semiCirculo.css" />
@@ -19,6 +20,7 @@
 </head>
 
 <body>
+  <!--NAV-->
   <nav class="navbar">
     <div class="nav-top">
       <!-- Logo -->
@@ -33,7 +35,7 @@
         <a href="#servicos">Serviços</a>
         <a href="#tituloPlanos">Planos</a>
         <a href="#testemunhas">Feedbacks</a>
-        <a href="#faq-section">FAQs</a>
+        <a href="#faq-container">FAQs</a>
       </div>
 
       <button class="nav-btn">Login</button>
@@ -53,11 +55,12 @@
       <a href="#servicos">Serviços</a>
       <a href="#tituloPlanos">Planos</a>
       <a href="#testemunhas">Feedbacks</a>
-      <a href="#faq-section">FAQs</a>
+      <a href="#faq-container">FAQs</a>
       <a class="nav-btn-mobile">Login</a>
     </div>
   </nav>
 
+  <!--TITULO HOME-->
   <section class="hero">
     <h1>Plataforma <span class="highlight">Lumen</span></h1>
     <p class="subtext">
@@ -85,11 +88,14 @@
     </svg>
   </div>
 
+  <!--MAIN-->
   <main>
+
+    <!--SOBRE-->
     <section id="sobre">
       <div id="cardsSobre">
-        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="cardLinha">
-          <div class="cardInfo-menor">
+        <div class="cardLinha">
+          <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="cardInfo-menor">
             <div class="cardicon">
               <div class="icon-eye">
                 <svg width="30" height="30" fill="none" stroke="#4480C4" stroke-width="2" stroke-linecap="round"
@@ -108,7 +114,7 @@
             </div>
           </div>
 
-          <div class="cardInfo-menor">
+          <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="cardInfo-menor">
             <div class="cardicon">
               <div class="icon-eye">
                 <img
@@ -124,7 +130,7 @@
             </div>
           </div>
 
-          <div class="cardInfo-menor">
+          <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="cardInfo-menor">
             <div class="cardicon">
               <div class="icon-eye">
                 <img
@@ -141,7 +147,7 @@
           </div>
         </div>
 
-        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="cardLinha">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="cardLinha">
           <div class="cardInfo-menor">
             <div class="cardicon">
               <div class="icon-eye">
@@ -159,7 +165,7 @@
             </div>
           </div>
 
-          <div class="cardInfo-maior">
+          <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="cardInfo-maior">
             <div class="cardicon">
               <div class="icon-eye">
                 <img
@@ -184,13 +190,14 @@
       </div>
     </section>
 
+    <!--SERVIÇOS-->
     <section id="servicos">
       <h2 class="tituloServicos" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
         Essa é uma plataforma
         indicada para</h2>
 
-      <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" id="containerServicos">
-        <div class="cardservico">
+      <div id="containerServicos">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="cardservico">
           <div class="cardicon">
             <div class="icon-box">
               <img
@@ -206,7 +213,7 @@
           </div>
         </div>
 
-        <div class="cardservico">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="cardservico">
           <div class="cardicon">
             <div class="icon-box">
               <img
@@ -222,7 +229,7 @@
           </div>
         </div>
 
-        <div class="cardservico">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="cardservico">
           <div class="cardicon">
             <div class="icon-box">
               <img
@@ -238,11 +245,14 @@
           </div>
         </div>
       </div>
-
-      <h1 data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" id="tituloPlanos">
+    </section>
+      
+    <!--PLANOS-->
+    <section>
+        <h1 data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" id="tituloPlanos">
         Escolha o Plano Ideal para Sua Necessidade</h1>
-      <div id="containerPlanos">
-        <div class="cardPlanos">
+      <div  id="containerPlanos">
+        <div  data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="cardPlanos">
           <div class="icon-box-planos">
             <p>1</p>
           </div>
@@ -256,13 +266,13 @@
             <li>Conformidade com a Lei 14.133</li>
           </ul>
 
-          <a href="https://wa.me/5511999999999?text=Olá, gostaria de solicitar acesso ao plano Lumen Individual!"
+          <a href="https://wa.me/5516981627387?text=Olá, gostaria de solicitar acesso ao plano Lumen Individual!"
             target="_blank">
             <button class="btn-premium">Solicitar Acesso</button>
           </a>
         </div>
 
-        <div class="cardPlanos">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="cardPlanos">
           <div class="icon-box-planos">
             <p>2</p>
           </div>
@@ -276,13 +286,13 @@
             <li>Otimização do tempo, padronização, maior assertividade</li>
           </ul>
 
-          <a href="https://wa.me/5511999999999?text=Olá, gostaria de solicitar acesso ao plano Lumen Consultor!"
+          <a href="https://wa.me/5516981627387?text=Olá, gostaria de solicitar acesso ao plano Lumen Consultor!"
             target="_blank">
             <button class="btn-premium">Solicitar Acesso</button>
           </a>
         </div>
 
-        <div class="cardPlanos">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="cardPlanos">
           <div class="icon-box-planos">
             <p>3</p>
           </div>
@@ -295,13 +305,13 @@
             <li>Gestão para municípios ilimitados</li>
             <li>Consultoria inteligente, controle total e resultados ilimitados</li>
           </ul>
-          <a href="https://wa.me/5511999999999?text=Olá, gostaria de solicitar acesso ao plano Lumen Prêmio!"
+          <a href="https://wa.me/5516981627387?text=Olá, gostaria de solicitar acesso ao plano Lumen Prêmio!"
             target="_blank">
-            <button class="btn-premium">Solicitar Acesso</button>
+            <button class="btn-premium" id="lumenPremioBtn">Solicitar Acesso</button>
           </a>
         </div>
 
-        <div class="cardPlanos">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="cardPlanos">
           <div class="icon-box-planos">
             <p>4</p>
           </div>
@@ -314,18 +324,20 @@
             <li>Gestão ilimitada</li>
             <li>Painéis integrados, usuários ilimitados, controle jurídico e financeiro, governança eficiente.</li>
           </ul>
-          <a href="https://wa.me/5511999999999?text=Olá, gostaria de solicitar acesso ao plano Lumen Governança!"
+          <a href="https://wa.me/5516981627387?text=Olá, gostaria de solicitar acesso ao plano Lumen Governança!"
             target="_blank">
             <button class="btn-premium">Solicitar Acesso</button>
           </a>
         </div>
       </div>
     </section>
+    
 
+      <!--FEEDBACKS-->
     <section id="testemunhas">
-      <h1 class="tituloTestemunhas">Gestores que transformaram com a Lumen</h2>
+      <h1 data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="tituloTestemunhas">Gestores que transformaram com a Lumen</h2>
         <div id="containerTestemunhas">
-          <div class="cardtestemunhas">
+          <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="cardtestemunhas">
             <div class="perfil">
               <img src="src/img/foto2.jpg" alt="Foto de perfil" />
               <div>
@@ -342,7 +354,7 @@
           </div>
 
 
-          <div class="cardtestemunhas">
+          <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="cardtestemunhas">
             <div class="perfil">
               <img src="src/img/foto1.jpg" alt="Foto de perfil" />
               <div>
@@ -359,7 +371,7 @@
           </div>
 
 
-          <div class="cardtestemunhas">
+          <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="cardtestemunhas">
             <div class="perfil">
               <img src="src/img/foto3.jpg" alt="Foto de perfil" />
               <div>
@@ -380,14 +392,14 @@
       <div class="btnContainer">
         <button class="btnTestemunhas">Começar</button>
       </div>-->
-
     </section>
 
+    <!--FAQS-->
     <section id="faq-section">
-      <div class="faq-container">
-        <h2 class="faq-title">Perguntas Frequentes</h2>
+      <div id="faq-container">
+        <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="faq-title">Perguntas Frequentes</h2>
 
-        <div class="faq-item">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="faq-item">
           <button class="faq-question">
             O que é a Lumen e como ela pode ajudar minha gestão pública?
             <span class="faq-icon">+</span>
@@ -399,7 +411,7 @@
         </div>
 
 
-        <div class="faq-item">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="faq-item">
           <button class="faq-question">
             A Lumen substitui o trabalho do servidor público?
             <span class="faq-icon">+</span>
@@ -412,7 +424,7 @@
           </div>
         </div>
 
-        <div class="faq-item">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="faq-item">
           <button class="faq-question">
             Preciso instalar algum sistema?
             <span class="faq-icon">+</span>
@@ -422,7 +434,7 @@
           </div>
         </div>
 
-        <div class="faq-item">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="faq-item">
           <button class="faq-question">
             É necessário saber direito ou informática para usar a Lumen?
             <span class="faq-icon">+</span>
@@ -432,7 +444,7 @@
           </div>
         </div>
 
-        <div class="faq-item">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="faq-item">
           <button class="faq-question">
             A Lumen está de acordo com a Lei 14.133/2021?
             <span class="faq-icon">+</span>
@@ -443,7 +455,7 @@
         </div>
 
 
-        <div class="faq-item">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="faq-item">
           <button class="faq-question">
             Como a IA-LUX funciona e quem toma a decisão final?
             <span class="faq-icon">+</span>
@@ -455,7 +467,7 @@
           </div>
         </div>
 
-        <div class="faq-item">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="faq-item">
           <button class="faq-question">
             Posso testar antes de contratar?
             <span class="faq-icon">+</span>
@@ -465,7 +477,7 @@
           </div>
         </div>
 
-        <div class="faq-item">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="faq-item">
           <button class="faq-question">
             A plataforma protege juridicamente o servidor público?
             <span class="faq-icon">+</span>
@@ -477,7 +489,7 @@
           </div>
         </div>
 
-        <div class="faq-item">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="faq-item">
           <button class="faq-question">
             A Lumen está de acordo com a LGPD? Os dados são seguros?
             <span class="faq-icon">+</span>
@@ -491,7 +503,11 @@
       </div>
     </section>
 
-
+    <div id="progress">
+        <span id="progress-value">
+            <i class='bx bx-chevrons-up'></i>
+        </span>
+    </div>
 
     <!--FEIXES DE LUZ-->
     <div class="light-container">
@@ -505,8 +521,8 @@
   </main>
 
 
-
-  <footer class="footer">
+  <!--FOOTER-->
+  <footer data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="footer">
     <a href="#hero">Inicio</a>
     <a href="#sobre">Sobre</a>
     <a href="#servicos">Serviços</a>
@@ -542,6 +558,8 @@
       });
     });
   </script>
+
+  
 </body>
 
 </html>

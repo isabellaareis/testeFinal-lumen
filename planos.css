@@ -15,6 +15,7 @@
 }
 
 .cardPlanos {
+  
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -208,6 +209,10 @@
 
   .lista-premium {
     font-size: 1.2rem;
+  }
+
+  #lumenPremioBtn {
+    margin-top: 100px;
   }
 }
 

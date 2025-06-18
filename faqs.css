@@ -5,7 +5,7 @@
   justify-content: center;
 }
 
-.faq-container {
+#faq-container {
   margin-top: 100px;
   width: 100%;
   max-width: 800px;
@@ -80,6 +80,13 @@
 
 /* 321px até 376px */
 @media (min-width: 321px) and (max-width: 376px) {
+
+   .faq-item{
+    width: 80vw;
+    margin: 0 auto;
+    height: auto;
+  }
+
   .faq-title {
     font-size: 1.3rem;
   }
@@ -100,6 +107,7 @@
 
   .faq-item{
     width: 80vw;
+    margin: 0 auto;
     height: auto;
   }
 
@@ -120,6 +128,13 @@
 
 /* 768px até 991px (tablets) */
 @media (min-width: 768px) and (max-width: 991px) {
+
+  .faq-item{
+    width: 85%;
+    margin: 0 auto;
+    height: auto;
+  }
+
   .faq-title {
     font-size: 1.8rem;
   }
@@ -136,7 +151,7 @@
 }
 
 @media (min-width: 1200px) and (max-width: 1599px) {
-  .faq-container {
+  #faq-container {
     max-width: 1100px;
     gap: 2rem;
   }
