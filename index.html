@@ -30,9 +30,11 @@
       <!-- Links centralizados (desktop) -->
       <div class="nav-links">
         <a href="#">Início</a>
-        <a href="#">Sobre</a>
-        <a href="#">Serviços</a>
-        <a href="#">FAQs</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#tituloPlanos">Planos</a>
+        <a href="#testemunhas">Testemunhas</a>
+        <a href="#faq-section">FAQs</a>
       </div>
 
       <button class="nav-btn">Login</button>
@@ -48,9 +50,11 @@
     <!-- Menu mobile com links e botão -->
     <div class="nav-mobile" id="navMobile">
       <a href="#">Início</a>
-      <a href="#">Sobre</a>
-      <a href="#">Serviços</a>
-      <a href="#">FAQs</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#tituloPlanos">Planos</a>
+      <a href="#testemunhas">Testemunhas</a>
+      <a href="#faq-section">FAQs</a>
       <a class="nav-btn-mobile">Login</a>
     </div>
   </nav>
@@ -235,7 +239,7 @@
         </div>
       </div>
 
-      <h1 data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" class="tituloPlanos">Escolha o Plano Ideal para Sua Necessidade</h1>
+      <h1 data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" id="tituloPlanos">Escolha o Plano Ideal para Sua Necessidade</h1>
       <div  id="containerPlanos">
         <div class="cardPlanos">
           <div class="icon-box-planos">
@@ -268,7 +272,9 @@
             <li>Otimização do tempo, padronização, maior assertividade</li>
           </ul>
 
-          <button class="btn-premium">Solicitar Acesso</button>
+          <a href="https://wa.me/5511958194668?text=Olá,%20quero%20mais%20informações20%sobre20%o20%plano20%Lumen20%Consultor!" target="_blank">
+            <button class="btn-premium">Solicitar Acesso</button>
+          </a>
         </div>
 
         <div class="cardPlanos">
@@ -307,7 +313,7 @@
       </div>
     </section>
 
-    <section class="testemunhas">
+    <section id="testemunhas">
       <h1 class="tituloTestemunhas">Gestores que transformaram com a Lumen</h2>
       <div  id="containerTestemunhas">
         <div class="cardtestemunhas">
@@ -365,7 +371,7 @@
       
     </section>
 
-    <section class="faq-section">
+    <section id="faq-section">
     <div class="faq-container">
       <h2 class="faq-title">Perguntas Frequentes</h2>
 
@@ -417,13 +423,15 @@
 
 
     <footer class="footer">
-      <a href="#about">Sobre</a>
-      <a href="#services">Serviços</a>
-      <a href="#projects">Projetos</a>
-      <a href="#team">Equipe</a>
-      <a href="#contact">Contato</a>
+      <a href="#hero">Inicio</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#team">FAQ</a>
       <p>&copy; 2025 Lumen. Todos os direitos reservados.</p>
   </footer>
+
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 
   <script>
     const hamburger = document.getElementById("hamburger");

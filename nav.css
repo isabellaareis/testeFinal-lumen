@@ -179,7 +179,7 @@
 /* RESPONSIVO */
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .navbar {
     max-width: 100%;
     margin: 0;
@@ -215,7 +215,7 @@
 }
 
 /* Tablets e notebooks menores */
-@media (min-width: 769px) and (max-width: 1023px) {
+@media (min-width: 1023px) {
   .navbar {
     max-width: 700px;
     margin: 30px auto;
