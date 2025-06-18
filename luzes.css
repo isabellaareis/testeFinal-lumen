@@ -1,11 +1,8 @@
-
 .light-container {
-  position: fixed; /* ou absolute, se preferir */
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
-  overflow: hidden; /* ESSENCIAL para cortar tudo fora da tela */
+  overflow: hidden;
   pointer-events: none;
   z-index: -1;
 }
@@ -24,8 +21,6 @@
     filter: blur(50px); 
     opacity: 0.4; 
 }
-
-
 
 /* 6 feixes de luzes*/
 .beam1 {
