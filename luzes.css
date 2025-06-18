@@ -1,8 +1,7 @@
 
-
 .light-container {
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
   z-index: 6;
 }
 
@@ -172,4 +171,3 @@
   .beam5 { left: 90%; top: -30%; }
   .beam6 { left: 110%; top: -30%; }
 }
-
