@@ -96,8 +96,8 @@
   .beam2 { left: 40%; top: -40%; }
   .beam3 { left: 70%; top: -40%; }
   .beam4 { left: 100%; top: -40%; }
-  .beam5 { left: 130%; top: -40%; }
-  .beam6 { left: 160%; top: -40%; }
+  .beam5 { left: 130%; top: -40%; width: 4vw; }
+  .beam6 { display: none;}
 }
 
 @media (min-width: 1200px) and (max-width: 1599px) {
