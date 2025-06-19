@@ -93,7 +93,7 @@
   }
 
   .light-beam {
-    width: 30vw; 
+    width: 25vw; 
     height: 170vh; 
     filter: blur(55px); 
     opacity: 0.5; 
@@ -101,8 +101,8 @@
   }
 
   .beam1 { display: none;}
-  .beam2 { left: 10%; top: -40%; }
-  .beam3 { left: 67%; top: -40%;}
+  .beam2 { display: none; }
+  .beam3 { left: 65%; top: -40%;}
   .beam4 { display: none; }
   .beam5 {display: none; }
   .beam6 { display: none;}
