@@ -175,23 +175,37 @@
     margin-top: 60px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    padding: 2.5rem 2rem 3.5rem;
+  }
+
+  .lista-premium {
+    font-size: 1.3rem;
+    min-height: 240px; /* Garante altura uniforme para o conteúdo acima do botão */
   }
 
   .btn-premium {
     margin-top: auto;
+    align-self: flex-start; /* ou center, se quiser centralizar o botão */
+    width: 100%;
+    padding: 0.9rem 0;
+    background: #00bfff;
+    border: none;
+    border-radius: 14px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
   }
 
   .titulo-premium {
     font-size: 1.5rem;
   }
 
-  .lista-premium {
-    font-size: 1.3rem;
-  }
-
   /* Remover margem do card individual */
   /* #um { margin-top: 0; } */
 }
+
 
 
 @media screen and (min-width: 1200px) and (max-width: 1599px) {
