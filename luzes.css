@@ -58,12 +58,9 @@
     transform: rotate(30deg);
   }
 
-  .beam1 { left: 60%; top: -10%; }
-  .beam2 { left: 100%; top: -10%; }
-  .beam3 { left: 160%; top: -50%; }
-  .beam4 { left: 180%; top: -10%; }
-  .beam5 { left: 200%; top: -50%; }
-  .beam6 { left: 210%; top: -50%; }
+  .beam2 { left: 70%; top: -10%; }
+
+  .beam1, .beam3, .beam4, .beam5, .beam6 { display: none; }
 }
 
 

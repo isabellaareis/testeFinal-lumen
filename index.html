@@ -17,13 +17,11 @@
   <link rel="stylesheet" href="planos.css" />
   <link rel="stylesheet" href="footer.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
 
 <body>
   <!--NAV-->
-  <nav id="navbar">
+  <nav class="navbar">
     <div class="nav-top">
       <!-- Logo -->
       <a href="#" class="nav-title">
@@ -39,11 +37,10 @@
         <a href="#testemunhas">Feedbacks</a>
         <a href="#faq-container">FAQs</a>
       </div>
-
-      <a href="">
+      <a href="#">
         <button class="nav-btn">Login</button>
       </a>
-      
+
       <!-- Menu mobile (hamburger) -->
       <div class="hamburger" id="hamburger">
         <div></div>
@@ -272,7 +269,7 @@
 
           <a href="https://wa.me/5516981627387?text=Olá, gostaria de solicitar acesso ao plano Lumen Individual!"
             target="_blank">
-            <button class="btn-premium">Solicitar Acesso</button>
+            <button class="btn-premium" id="um">Solicitar Acesso</button>
           </a>
         </div>
 
@@ -292,7 +289,7 @@
 
           <a href="https://wa.me/5516981627387?text=Olá, gostaria de solicitar acesso ao plano Lumen Consultor!"
             target="_blank">
-            <button class="btn-premium">Solicitar Acesso</button>
+            <button class="btn-premium" id="dois">Solicitar Acesso</button>
           </a>
         </div>
 
@@ -311,7 +308,7 @@
           </ul>
           <a href="https://wa.me/5516981627387?text=Olá, gostaria de solicitar acesso ao plano Lumen Prêmio!"
             target="_blank">
-            <button class="btn-premium" id="lumenPremioBtn">Solicitar Acesso</button>
+            <button class="btn-premium" id="tres">Solicitar Acesso</button>
           </a>
         </div>
 
@@ -330,7 +327,7 @@
           </ul>
           <a href="https://wa.me/5516981627387?text=Olá, gostaria de solicitar acesso ao plano Lumen Governança!"
             target="_blank">
-            <button class="btn-premium">Solicitar Acesso</button>
+            <button class="btn-premium" id="tres">Solicitar Acesso</button>
           </a>
         </div>
       </div>
@@ -526,51 +523,16 @@
 
 
   <!--FOOTER-->
-  <footer data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="footer-newsletter">
-    <div class="newsletter-box">
-      <h2>Envie uma mensagem para a Lumen</h2>
-      <p>Digite sua dúvida ou sugestão abaixo. Vamos responder via WhatsApp.</p>
-
-      <div class="newsletter-form">
-        <input type="text" id="mensagemUsuario" placeholder="Escreva sua mensagem...">
-        <button onclick="enviarWhatsApp()">Enviar</button>
-      </div>
-      
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-      </div>
-    </div>
-
-   <div class="footer-bottom">
-      <span>© 2025 Lumen – Todos os direitos reservados. | Representante oficial: Dagoberto</span>
-      
-      <nav>
-        <a href="#">Início</a>
-        <a href="#">Serviços</a>
-        <a href="#">Planos</a>
-        <a href="#">Feedbacks</a>
-        <a href="#">FAQs</a>
-        <a href="#">Login</a>
-      </nav>
-    </div>
+  <footer data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1200" class="footer">
+    <a href="#">Inicio</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#tituloPlanos">Planos</a>
+    <a href="#testemunhas">Feedbacks</a>
+    <a href="#faq-container">FAQ</a>
+    <a href="#">Login</a>
+    <p>&copy; 2025 Lumen. Todos os direitos reservados.</p>
   </footer>
-
-  <script>
-    function enviarWhatsApp() {
-      const numero = '5511969663420'; // Substitua pelo número oficial da LUMEN com DDI + DDD
-      const mensagem = document.getElementById('mensagemUsuario').value.trim();
-
-      if (mensagem === '') {
-        alert('Por favor, digite uma mensagem antes de enviar.');
-        return;
-      }
-
-      const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
-      window.open(url, '_blank');
-    }
-  </script>
 
   <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
