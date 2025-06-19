@@ -76,10 +76,10 @@
       transform: rotate(30deg);
   }
 
-  .beam1 { left: 10%; top: -10%; }
-  .beam2 { left: 40%; top: -10%; }
-  .beam3 { left: 70%; top: -50%; }
-  .beam4 { right: -90%; top: -50%; }
+  .beam1 { left: 60%; top: -10%; }
+  .beam2 { left: 70%; top: -10%; }
+  .beam3 { left: 80%; top: -50%; }
+  .beam4 { left: 90%; top: -50%; }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
