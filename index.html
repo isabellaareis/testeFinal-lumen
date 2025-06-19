@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Plataforma Lumen</title>
   <link rel="icon" type="image/png" href="src/img/escudo-azul-amarelo-teste.png" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="nav.css" />
-  <link rel="stylesheet" href="semiCirculo.css" />
-  <link rel="stylesheet" href="luzes.css" />
-  <link rel="stylesheet" href="home.css" />
-  <link rel="stylesheet" href="sobre.css" />
-  <link rel="stylesheet" href="testemunhas.css" />
-  <link rel="stylesheet" href="faqs.css" />
-  <link rel="stylesheet" href="servicos.css" />
-  <link rel="stylesheet" href="planos.css" />
-  <link rel="stylesheet" href="footer.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/nav.css" />
+  <link rel="stylesheet" href="assets/css/semiCirculo.css" />
+  <link rel="stylesheet" href="assets/css/luzes.css" />
+  <link rel="stylesheet" href="assets/css/home.css" />
+  <link rel="stylesheet" href="assets/css/sobre.css" />
+  <link rel="stylesheet" href="assets/css/testemunhas.css" />
+  <link rel="stylesheet" href="assets/css/faqs.css" />
+  <link rel="stylesheet" href="assets/css/servicos.css" />
+  <link rel="stylesheet" href="assets/css/planos.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
@@ -269,7 +269,7 @@
 
           <a href="https://wa.me/5516981627387?text=Olá, gostaria de solicitar acesso ao plano Lumen Individual!"
             target="_blank">
-            <button class="btn-premium" id="um">Solicitar Acesso</button>
+            <button class="btn-premium" id="lumenIndividualBtn">Solicitar Acesso</button>
           </a>
         </div>
 
@@ -289,7 +289,7 @@
 
           <a href="https://wa.me/5516981627387?text=Olá, gostaria de solicitar acesso ao plano Lumen Consultor!"
             target="_blank">
-            <button class="btn-premium" id="dois">Solicitar Acesso</button>
+            <button class="btn-premium" id="lumenConsultorBtn">Solicitar Acesso</button>
           </a>
         </div>
 
@@ -308,7 +308,7 @@
           </ul>
           <a href="https://wa.me/5516981627387?text=Olá, gostaria de solicitar acesso ao plano Lumen Prêmio!"
             target="_blank">
-            <button class="btn-premium" id="tres">Solicitar Acesso</button>
+            <button class="btn-premium" id="lumenPremioBtn">Solicitar Acesso</button>
           </a>
         </div>
 
@@ -327,7 +327,7 @@
           </ul>
           <a href="https://wa.me/5516981627387?text=Olá, gostaria de solicitar acesso ao plano Lumen Governança!"
             target="_blank">
-            <button class="btn-premium" id="tres">Solicitar Acesso</button>
+            <button class="btn-premium" id="lumenGovernancaoBtn">Solicitar Acesso</button>
           </a>
         </div>
       </div>
@@ -534,36 +534,18 @@
     <p>&copy; 2025 Lumen. Todos os direitos reservados.</p>
   </footer>
 
-  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+  <script type="text/javascript" src="assets/js/script.js"></script>
 
-  <script>
-    const hamburger = document.getElementById("hamburger");
-    const navMobile = document.getElementById("navMobile");
 
-    hamburger.addEventListener("click", () => {
-      hamburger.classList.toggle("active");
-      navMobile.classList.toggle("active");
-    });
-  </script>
-
+  <!--SCRIP ANIMAÇÕES-->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
 
-  <script>
-    const faqItems = document.querySelectorAll('.faq-item');
 
-    faqItems.forEach(item => {
-      const question = item.querySelector('.faq-question');
-      question.addEventListener('click', () => {
-        item.classList.toggle('open');
-      });
-    });
-  </script>
-
-  
 </body>
 
 </html>

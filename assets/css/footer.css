@@ -34,7 +34,7 @@
     /* 768px até 991px */
     @media (min-width: 768px) and (max-width: 991px) {
       .footer a {
-        margin: 0 10px 5px;
+        margin: 0 10px 20px;
       }
     }
 
