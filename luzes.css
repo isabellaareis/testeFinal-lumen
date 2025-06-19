@@ -102,7 +102,7 @@
 
   .beam1 { left: 10%; top: -40%; }
   .beam2 { left: 40%; top: -40%; }
-  .beam3 { left: 70%; top: -40%; }
+  .beam3 { left: 90%; top: -40%; background-color: aquamarine;}
   .beam4 { display: none; }
   .beam5 {display: none; }
   .beam6 { display: none;}
