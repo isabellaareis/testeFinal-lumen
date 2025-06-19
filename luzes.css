@@ -96,7 +96,7 @@
   .beam2 { left: 40%; top: -40%; }
   .beam3 { left: 70%; top: -40%; }
   .beam4 { left: 100%; top: -40%; }
-  .beam5 { left: 130%; top: -40%; width: 4vw; }
+  .beam5 {display: none; }
   .beam6 { display: none;}
 }
 
