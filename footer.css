@@ -55,6 +55,6 @@
     /* min-width: 1920px */
     @media (min-width: 1920px) {
       .footer a {
-        margin: 0 16px 0;
+        margin: 10px 16px 10px;
       }
     }
