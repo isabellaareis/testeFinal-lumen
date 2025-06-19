@@ -84,15 +84,16 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-
   .light-container {
-    width: 90vw;
+    position: relative;
+    width: 100vw;
     overflow: hidden;
     top: 0;
     left: 0;
   }
 
   .light-beam {
+    position: absolute;
     width: 7vw; 
     height: 170vh; 
     filter: blur(55px); 
@@ -102,11 +103,10 @@
 
   .beam1 { left: 10%; top: -40%; }
   .beam2 { left: 40%; top: -40%; }
-  .beam3 { left: 90%; top: -40%; background-color: aquamarine;}
-  .beam4 { display: none; }
-  .beam5 {display: none; }
-  .beam6 { display: none;}
+  .beam3 { right: -1vw; top: -40%; background-color: aquamarine; } /* corrigido */
+  .beam4, .beam5, .beam6 { display: none; }
 }
+
 
 @media (min-width: 1200px) and (max-width: 1599px) {
     .light-beam {
