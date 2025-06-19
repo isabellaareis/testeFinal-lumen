@@ -16,3 +16,12 @@ const faqItems = document.querySelectorAll('.faq-item');
         item.classList.toggle('open');
         });
 });
+
+/*ANIMAÇÃO */
+ window.addEventListener('load', () => {
+    document.querySelectorAll('.fade-up').forEach((el, i) => {
+        setTimeout(() => {
+        el.classList.add('animate');
+        }, i * 200); // atraso em cascata
+    });
+    });
