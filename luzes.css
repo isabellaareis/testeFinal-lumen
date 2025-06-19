@@ -69,19 +69,19 @@
 
 @media (min-width: 377px) and (max-width: 480px) {
     .light-beam {
-        width: 8vw; 
-        height: 200vh; 
-        filter: blur(35px); 
-        opacity: 0.6; 
-        transform: rotate(30deg);
+      width: 8vw; 
+      height: 200vh; 
+      filter: blur(35px); 
+      opacity: 0.6; 
+      transform: rotate(30deg);
   }
 
-  .beam1 { left: 40%; top: -10%; }
-  .beam2 { left: 80%; top: -10%; }
-  .beam3 { left: 150%; top: -50%; }
-  .beam4 { left: 180%; top: -50%; }
-  .beam5 { left: 210%; top: -50%; }
-  .beam6 { left: 210%; top: -50%; }
+  .beam1 { left: 10%; top: -10%; }
+  .beam2 { left: 40%; top: -10%; }
+  .beam3 { left: 70%; top: -50%; }
+  .beam4 { left: 100%; top: -50%; }
+  .beam5 { left: 130%; top: -50%; }
+  .beam6 { left: 160%; top: -50%; }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
