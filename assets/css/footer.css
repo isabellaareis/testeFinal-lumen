@@ -23,11 +23,12 @@
         color: #f0f0f0;
         margin-top: 10px;
     }
+
     /* 377px até 480px */
     @media (min-width: 377px) and (max-width: 480px) {
       .footer a {
         display: block;
-        margin: 10px 0;
+        margin: 20px 0;
       }
     }
 
