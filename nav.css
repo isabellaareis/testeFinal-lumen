@@ -1,6 +1,6 @@
 
 /* NAVBAR */
-.navbar {
+#navbar {
   position: relative;
   z-index: 27;
   background: rgba(255, 255, 255, 0.08);
