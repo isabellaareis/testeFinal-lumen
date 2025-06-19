@@ -84,29 +84,29 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   .light-container {
-    position: relative;
-    width: 100vw;
+    width: 90vw;
     overflow: hidden;
     top: 0;
     left: 0;
   }
 
   .light-beam {
-    position: absolute;
-    width: 7vw; 
+    width: 35vw; 
     height: 170vh; 
     filter: blur(55px); 
     opacity: 0.5; 
     transform: rotate(30deg);
   }
 
-  .beam1 { left: 10%; top: -40%; }
-  .beam2 { left: 40%; top: -40%; }
-  .beam3 { right: -1vw; top: -40%; background-color: aquamarine; } /* corrigido */
-  .beam4, .beam5, .beam6 { display: none; }
+  .beam1 { display: none;}
+  .beam2 { left: 10%; top: -40%; }
+  .beam3 { left: 95%; top: -40%;}
+  .beam4 { display: none; }
+  .beam5 {display: none; }
+  .beam6 { display: none;}
 }
-
 
 @media (min-width: 1200px) and (max-width: 1599px) {
     .light-beam {
