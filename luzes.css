@@ -79,9 +79,7 @@
   .beam1 { left: 10%; top: -10%; }
   .beam2 { left: 40%; top: -10%; }
   .beam3 { left: 70%; top: -50%; }
-  .beam4 { left: 100%; top: -50%; }
-  .beam5 { left: 130%; top: -50%; }
-  .beam6 { left: 160%; top: -50%; }
+  .beam4 { left: 90%; top: -50%; }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
