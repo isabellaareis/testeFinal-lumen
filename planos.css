@@ -15,7 +15,6 @@
 }
 
 .cardPlanos {
-  
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -38,6 +37,21 @@
   border-top: 1px solid rgba(0, 255, 255, 0.08);
 }
 
+.btn-premium {
+  margin-top: auto;
+  width: 100%;
+  padding: 0.9rem 0;
+  background: #4480C4;
+  border: none;
+  border-radius: 14px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 25px rgba(72, 128, 196, 0.4);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
 
 
 .titulo-premium {
@@ -65,21 +79,6 @@
   margin-top: 0.7rem;
 }
 
-.btn-premium {
-  margin-top: auto;
-  width: 100%;
-  padding: 0.9rem 0;
-  background: #4480C4;
-  border: none;
-  border-radius: 14px;
-  color: white;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 25px rgba(72, 128, 196, 0.4);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-}
 
 .btn-premium:hover {
   transform: translateY(-2px);
@@ -174,9 +173,15 @@
   .cardPlanos {
     height: 800px;
     margin-top: 60px;
+    display: flex;
+    flex-direction: column;
   }
 
-  .titulo-premium  {
+  .btn-premium {
+    margin-top: auto;
+  }
+
+  .titulo-premium {
     font-size: 1.5rem;
   }
 
@@ -184,10 +189,10 @@
     font-size: 1.3rem;
   }
 
-  #um {
-    margin-top: 50px;
-  }
+  /* Remover margem do card individual */
+  /* #um { margin-top: 0; } */
 }
+
 
 @media screen and (min-width: 1200px) and (max-width: 1599px) {
 
