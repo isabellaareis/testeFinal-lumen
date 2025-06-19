@@ -84,6 +84,13 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
+  .light-container {
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+
   .light-beam {
     width: 7vw; 
     height: 170vh; 
