@@ -77,9 +77,8 @@
   }
 
   .beam2 { left: 70%; top: -10%; }
-  .beam4 { left: 190%; top: -50%; }
 
-  .beam5, .beam6, .beam1, .beam3 {
+  .beam5, .beam6, .beam1, .beam3, .beam4{
     display: none;
   }
 }
