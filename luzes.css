@@ -69,7 +69,7 @@
 
 @media (min-width: 377px) and (max-width: 480px) {
     .light-beam {
-      width: 8vw; 
+      width: 12vw; 
       height: 200vh; 
       filter: blur(35px); 
       opacity: 0.6; 
