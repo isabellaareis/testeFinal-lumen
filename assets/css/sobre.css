@@ -190,7 +190,44 @@
   }
 }
 
+ @media screen and (min-width: 992px) and (max-width: 1999px) {
+     .cardInfo-menor,
+  .cardLinha .cardInfo-maior {
+      width: 650px !important;
+      max-width: 85vw;
+      height: auto;
+      padding: 2.5rem;
+      font-size: 1.2rem;
+  }
 
+  .cardInfo-menor p,
+  .cardInfo-maior p {
+      font-size: 1.3rem;
+  }
+
+  .cardInfo-menor h3,
+  .cardInfo-maior h3 {
+      font-size: 1.4rem;
+  }
+
+  #cardsSobre {
+      width: 100%;
+      margin-top: -160px;
+      gap: 50px;
+  }
+
+  .cardLinha {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+  }
+
+  .icon-eye::before {
+      left: 30px;
+      width: 75px;
+      height: 3px;
+  }
+ }
 
 @media screen and (min-width: 1200px) and (max-width: 1599px) {
     #cardsSobre {

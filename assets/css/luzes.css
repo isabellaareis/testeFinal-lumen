@@ -105,6 +105,30 @@
   .beam6 { display: none;}
 }
 
+ @media screen and (min-width: 992px) and (max-width: 1999px) {
+   .light-container {
+    width: 90vw;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+
+  .light-beam {
+    width: 25vw; 
+    height: 170vh; 
+    filter: blur(55px); 
+    opacity: 0.5; 
+    transform: rotate(30deg);
+  }
+
+  .beam1 { display: none;}
+  .beam2 { display: none; }
+  .beam3 { left: 65%; top: -40%;}
+  .beam4 { display: none; }
+  .beam5 {display: none; }
+  .beam6 { display: none;}
+ }
+
 @media (min-width: 1200px) and (max-width: 1599px) {
     .light-beam {
     width: 3vw;
