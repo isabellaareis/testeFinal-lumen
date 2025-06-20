@@ -15,7 +15,6 @@
 }
 
 .cardPlanos {
-  
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -211,7 +210,7 @@
   flex: 1 1 calc(45% - 20px);  
   max-width: 420px;
   padding: 2.5rem 2rem 3rem;
-  height: 580px;               
+  height: auto;               
 }
   .titulo-premium  {
     font-size: 1.3rem;
@@ -222,7 +221,11 @@
   }
 
   #lumenPremioBtn {
-    margin-top: 100px;
+    margin-top: 30px;
+  }
+
+  #lumenIndividualBtn {
+    margin-top: 30px;
   }
 }
 
@@ -245,7 +248,7 @@
   flex: 1 1 calc(45% - 20px);  
   max-width: 490px;
   padding: 2.5rem 2rem 3rem;
-  height: 640px;               
+  height: auto;               
 }
 .titulo-premium  {
   margin-top: 40px;
@@ -256,17 +259,40 @@
   font-size: 1.3rem;
 }
 
-#lumenPremioBtn {
-  margin-top: 100px;
+#lumenGovernancaBtn {
+  margin-top: 30px;
 }
 
-  #lumenIndividualBtn  {
-  margin-top: 50px;
-  }
-
-  .icon-box-planos  {
+.icon-box-planos  {
   width: 65px;
   height: 65px;
-  }
+}
 
 }
+
+ @media screen and (min-width: 1920px) {
+    .cardPlanos {
+      height: auto;
+    }
+
+    .lista-premium {
+      font-size: 1.3rem;
+    }
+
+    .titulo-premium {
+      font-size: 1.4rem;
+    }
+
+    #containerPlanos {
+      gap: 60px;
+    }
+
+    #lumenIndividualBtn {
+      margin-top: 70px;
+    }
+    
+    .icon-box-planos {
+      width: 55px;
+      height: 55px;
+    }
+ }

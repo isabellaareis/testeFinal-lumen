@@ -27,7 +27,7 @@ function atualizarFaqs() {
   faqItems.forEach((item, index) => {
     item.style.display = mostrarTudo || index < 3 ? 'block' : 'none';
   });
-  toggleBtn.textContent = mostrarTudo ? 'Ver menos' : 'Ver todas';
+  toggleBtn.textContent = mostrarTudo ? 'Ver Menos' : 'Ver Mais';
 }
 
 // Inicializa com só 3 visíveis

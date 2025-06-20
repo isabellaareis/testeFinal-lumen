@@ -23,7 +23,7 @@
   min-height: 310px;
   color: #ffffff;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.04));
-   border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 20px;
   padding: 2rem;
   backdrop-filter: blur(14px);
@@ -81,6 +81,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+}
+
+.btnTestemunhas a,
+.btnTestemunhas a:visited,
+.btnTestemunhas a:hover,
+.btnTestemunhas a:focus,
+.btnTestemunhas a:active {
+  text-decoration: none;
+  color: #fff;/
 }
 
 .btnTestemunhas {
@@ -205,6 +215,8 @@
     width: 200px;
     font-size: 18px;
   }
+
+  
 }
 
 
@@ -252,5 +264,10 @@
   .depoimento .aspas {
     color: #E8B109;
     font-size: 1.8rem;
+  }
+
+  .btnTestemunhas {
+    padding: 1.5rem 2.5rem;
+    font-size: 1.4rem;
   }
 }

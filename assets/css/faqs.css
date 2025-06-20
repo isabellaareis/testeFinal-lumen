@@ -77,6 +77,14 @@
   transform: rotate(45deg);
 }
 
+.btnContainer-VerTodos {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
 #toggle-faq-btn {
   background-color: rgba(255, 255, 255, 0.05); 
   color: #fff;
@@ -214,8 +222,12 @@
    #toggle-faq-btn {
     margin: 2rem auto;
     display: block;
-    padding: 1rem 1.8rem;
+    padding: 1rem 2.5rem;
     font-size: 1.1rem;
+  }
+
+  .btnContainer-VerTodos {
+    margin-top: -20px;
   }
 }
 
@@ -239,7 +251,7 @@
   }
 
   #toggle-faq-btn {
-    margin: 2rem auto;
+    margin-top: -30px;
     padding: 1.3rem 4rem;
     font-size: 1.3rem;
   }
@@ -266,6 +278,7 @@
   }
 
   #toggle-faq-btn {
-    font: 1.2rem;
+    font-size: 1.4rem;
+    padding: 1.5rem 3.8rem;
   }
 }
