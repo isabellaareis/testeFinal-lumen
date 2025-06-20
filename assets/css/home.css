@@ -76,7 +76,7 @@
   }
 }
 
- @media screen and (min-width: 992px) and (max-width: 1999px) {
+ @media screen and (min-width: 992px) and (max-width: 1000px) {
   .hero {
     padding: 20rem 1.5rem;
   }

@@ -51,7 +51,7 @@
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1999px) {
+@media screen and (min-width: 992px) and (max-width: 1000px) {
     .footer a {
       margin: 10px 30px 60px;
     }

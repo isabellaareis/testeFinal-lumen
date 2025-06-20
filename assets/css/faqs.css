@@ -212,7 +212,7 @@
   }
 }
 
- @media screen and (min-width: 992px) and (max-width: 1999px) {
+ @media screen and (min-width: 992px) and (max-width: 1000px) {
   .faq-item{
     width: 85%;
     margin: 0 auto;
