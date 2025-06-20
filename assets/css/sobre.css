@@ -62,14 +62,12 @@
 
 .cardicon h3 {
   padding-top: 10px;
-  font-size: 1.2rem;
   font-weight: 600;
   color: white;
   margin: 0;
 }
 
 .cardicon p {
-  font-size: 0.95rem;
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.5;
   margin: 0;
@@ -162,7 +160,7 @@
     } 
 
     #cardsSobre {
-        margin-top: -280px;
+        margin-top: -200px;
         gap: 50px;
     }
 
@@ -239,9 +237,9 @@
   }
   
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
 #cardsSobre {
-    margin-top: 100px;
+    margin-top: -80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -251,21 +249,22 @@
 .cardLinha {
     display: flex;
     justify-content: center;
-    gap: 40px; /* Espaçamento maior nas telas grandes */
+    gap: 40px;
     flex-wrap: wrap;
 }
 
 .cardInfo-menor {
     font-size: 1.3rem;
-    width: 500px;  /* Aumenta largura proporcionalmente */
-    height: 300px;
+    width: 450px;
+    height: 380px;
 }
 
 .cardInfo-maior {
     font-size: 1.3rem;
-    width: 1020px;  /* Acompanha crescimento do layout */
-    height: 300px;
+    width: 940px;
+    height: 380px;
 }
+
 }
 
 @media screen and (min-width: 1920px) {
@@ -285,12 +284,12 @@
   }
 
   .cardInfo-menor {
-    width: 460px;    /* Aumenta proporcionalmente */
+    width: 460px;   
     height: 340px;
   }
 
   .cardInfo-maior {
-    width: 990px;   /* Maior para preencher bem a linha */
+    width: 990px;  
     height: 340px;
   }
 

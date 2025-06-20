@@ -94,16 +94,20 @@
   backdrop-filter: blur(10px);
   box-shadow: 0 0 8px rgba(232, 177, 9, 0.4);
   transition: all 0.3s ease;
+  white-space: nowrap;
+
+  display: flex;
+  justify-content: center;  
+  align-items: center;     
+  text-align: center;
+  text-decoration: none;
 }
+
 
 .btnTestemunhas:hover {
-  background-color: rgba(232, 177, 9, 0.1);
-  box-shadow: 0 0 12px rgba(232, 177, 9, 0.6), 0 0 4px rgba(232, 177, 9, 0.5) inset;
-  color: #E8B109;
-  transform: translateY(-2px);
+  background-color: #57595c71; 
+  transform: scale(1.03);
 }
-
-
 
 @media screen and (min-width: 321px) and (max-width: 376px) {
   .tituloTestemunhas {
@@ -206,12 +210,22 @@
 
 @media screen and (min-width: 1600px) and (max-width: 1919px) {
   .tituloTestemunhas {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   .cardtestemunhas {
-    width: 380px;
+    width: 400px;
   }
+
+  .nome {
+    font-size: 1.3rem;
+  }
+
+  .estrela {
+    font-size: 1.6rem;
+  }
+
+
 }
 
 
@@ -222,5 +236,21 @@
 
   .cardtestemunhas {
     width: 420px;
+  }
+
+  .cargo {
+    color: #aaa;
+    font-size: 1.3rem;
+  }
+
+  .depoimento {
+    font-style: italic;
+    font-size: 1.3rem;
+    line-height: 1.6;
+  }
+
+  .depoimento .aspas {
+    color: #E8B109;
+    font-size: 1.8rem;
   }
 }

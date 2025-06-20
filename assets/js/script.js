@@ -10,10 +10,30 @@ hamburger.addEventListener("click", () => {
 
 /* FAQ */
 const faqItems = document.querySelectorAll('.faq-item');
-    faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question');
-        question.addEventListener('click', () => {
-        item.classList.toggle('open');
-        });
+faqItems.forEach(item => {
+  const question = item.querySelector('.faq-question');
+  question.addEventListener('click', () => {
+    item.classList.toggle('open');
+  });
 });
 
+/* BOTÃO VER MAIS FAQS */
+const toggleBtn = document.getElementById('toggle-faq-btn');
+
+// Mostra inicialmente apenas 3 FAQs
+let mostrarTudo = false;
+
+function atualizarFaqs() {
+  faqItems.forEach((item, index) => {
+    item.style.display = mostrarTudo || index < 3 ? 'block' : 'none';
+  });
+  toggleBtn.textContent = mostrarTudo ? 'Ver menos' : 'Ver todas';
+}
+
+// Inicializa com só 3 visíveis
+atualizarFaqs();
+
+toggleBtn.addEventListener('click', () => {
+  mostrarTudo = !mostrarTudo;
+  atualizarFaqs();
+});

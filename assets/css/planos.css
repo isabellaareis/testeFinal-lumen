@@ -227,15 +227,46 @@
 }
 
 @media screen and (min-width: 1600px) and (max-width: 1919px) {
-  .titulo-premium  {
-    font-size: 1.3rem;
+#tituloPlanos {
+  font-size: 50px
+}
+
+#containerPlanos {
+  max-width: 1500px;      
+  margin: 180px auto;         
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;              
+  padding: 40px 20px;     
+}
+
+.cardPlanos {
+  flex: 1 1 calc(45% - 20px);  
+  max-width: 490px;
+  padding: 2.5rem 2rem 3rem;
+  height: 640px;               
+}
+.titulo-premium  {
+  margin-top: 40px;
+  font-size: 1.5rem;
+}
+
+.lista-premium {
+  font-size: 1.3rem;
+}
+
+#lumenPremioBtn {
+  margin-top: 100px;
+}
+
+  #lumenIndividualBtn  {
+  margin-top: 50px;
   }
 
-  .lista-premium {
-    font-size: 1.2rem;
+  .icon-box-planos  {
+  width: 65px;
+  height: 65px;
   }
 
-  .cardPlanos {
-    height: 700px;
-  }
 }
