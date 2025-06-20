@@ -122,7 +122,7 @@
 @media screen and (min-width: 377px) and (max-width: 480px) {
     .cardInfo-menor,
     .cardInfo-maior {
-        width: 80vw; 
+        width: 80vw !important;
         height: auto;
         padding: 2.5rem;
     }
@@ -152,47 +152,44 @@
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
-    .cardInfo-menor,
-    .cardInfo-maior {
-        width: 80%;
-        height: auto;
-        padding: 3rem;
-        font-size: 1.2rem;
-    }
+  .cardInfo-menor,
+  .cardLinha .cardInfo-maior {
+      width: 650px !important;
+      max-width: 85vw;
+      height: auto;
+      padding: 2.5rem;
+      font-size: 1.2rem;
+  }
 
-    .cardInfo-menor p,
-    .cardInfo-maior p{
-        font-size: 1.4rem;
-    } 
+  .cardInfo-menor p,
+  .cardInfo-maior p {
+      font-size: 1.3rem;
+  }
 
-    .cardInfo-menor h3,
-    .cardInfo-maior h3{
-        font-size: 1.4rem;
-    } 
+  .cardInfo-menor h3,
+  .cardInfo-maior h3 {
+      font-size: 1.4rem;
+  }
 
-    #cardsSobre {
-        margin-top: -200px;
-        gap: 50px;
-    }
+  #cardsSobre {
+      width: 100%;
+      margin-top: -160px;
+      gap: 50px;
+  }
 
-    .cardLinha {
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
-    }
+  .cardLinha {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+  }
 
-    .icon-eye::before {
-        content: "";
-        position: absolute;
-        top: 0;  
-        left: 30px;
-        width: 75px; 
-        height: 3px; 
-        background-color: #4480C4; 
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-    }
+  .icon-eye::before {
+      left: 30px;
+      width: 75px;
+      height: 3px;
+  }
 }
+
 
 
 @media screen and (min-width: 1200px) and (max-width: 1599px) {

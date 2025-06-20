@@ -24,6 +24,17 @@
         margin-top: 10px;
     }
 
+
+    @media (min-width: 321px) and (max-width: 376px) {
+      .footer {
+        margin-top: -10px;
+      }
+      .footer a {
+        display: block;
+        margin: 20px 0;
+      }
+    }
+
     /* 377px até 480px */
     @media (min-width: 377px) and (max-width: 480px) {
       .footer a {
@@ -34,6 +45,7 @@
 
     /* 768px até 991px */
     @media (min-width: 768px) and (max-width: 991px) {
+
       .footer a {
         margin: 0 10px 20px;
       }

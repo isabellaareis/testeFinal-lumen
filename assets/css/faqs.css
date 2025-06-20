@@ -113,7 +113,8 @@
   }
 
   .faq-title {
-    font-size: 1.3rem;
+    margin-top: -50px;
+    font-size: 26px;
   }
 
   .faq-question {
@@ -129,9 +130,15 @@
   #toggle-faq-btn {
     margin: 2rem auto;
     display: block;
-    padding: 0.8rem 1.4rem;
+    padding: 1rem 4rem;
     font-size: 0.9rem;
   }
+
+  .btnContainer-VerTodos {
+    margin-top: -50px;
+    margin-bottom: 80px;
+  }
+
 }
 
 /* 377px até 480px */
@@ -144,7 +151,8 @@
   }
 
   .faq-title {
-    font-size: 1.5rem;
+    margin-top: -40px;
+    font-size: 30px;
   }
 
   .faq-question {
@@ -160,8 +168,12 @@
    #toggle-faq-btn {
     margin: 2rem auto;
     display: block;
-    padding: 0.8rem 1.5rem;
+    padding: 1rem 3rem;
     font-size: 1rem;
+  }
+
+  .btnContainer-VerTodos {
+    margin-top: -20px;
   }
 }
 
@@ -193,6 +205,10 @@
     display: block;
     padding: 0.8rem 1.6rem;
     font-size: 1.1rem;
+  }
+
+  .btnContainer-VerTodos {
+    margin-top: -10px;
   }
 }
 

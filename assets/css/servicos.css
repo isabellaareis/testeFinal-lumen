@@ -112,7 +112,8 @@
     .cardservico {
       margin-top: -20px;
       width: 80%;     
-      height: auto;  
+      height: auto; 
+      padding-bottom: 50px;
     }
 
     .cardservico p {

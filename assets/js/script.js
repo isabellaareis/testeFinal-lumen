@@ -8,32 +8,45 @@ hamburger.addEventListener("click", () => {
     navMobile.classList.toggle("active");
 });
 
-/* FAQ */
+// Seleciona todos os itens da FAQ
 const faqItems = document.querySelectorAll('.faq-item');
-faqItems.forEach(item => {
-  const question = item.querySelector('.faq-question');
-  question.addEventListener('click', () => {
-    item.classList.toggle('open');
-  });
-});
+const toggleButton = document.getElementById('toggle-faq-btn');
 
-/* BOTÃO VER MAIS FAQS */
-const toggleBtn = document.getElementById('toggle-faq-btn');
-
-// Mostra inicialmente apenas 3 FAQs
 let mostrarTudo = false;
+const limiteInicial = 3;
 
-function atualizarFaqs() {
+
+
+function atualizarExibicaoFaqs() {
   faqItems.forEach((item, index) => {
-    item.style.display = mostrarTudo || index < 3 ? 'block' : 'none';
+    item.style.display = (mostrarTudo || index < limiteInicial) ? 'block' : 'none';
   });
-  toggleBtn.textContent = mostrarTudo ? 'Ver Menos' : 'Ver Mais';
+
+  toggleButton.textContent = mostrarTudo ? 'Ver Menos' : 'Ver Mais';
 }
 
-// Inicializa com só 3 visíveis
-atualizarFaqs();
 
-toggleBtn.addEventListener('click', () => {
-  mostrarTudo = !mostrarTudo;
-  atualizarFaqs();
-});
+function inicializarInteracoesFaq() {
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    if (question) {
+      question.addEventListener('click', () => {
+        item.classList.toggle('open');
+      });
+    }
+  });
+}
+
+function configurarToggleFaqs() {
+  if (toggleButton) {
+    toggleButton.addEventListener('click', () => {
+      mostrarTudo = !mostrarTudo;
+      atualizarExibicaoFaqs();
+    });
+  }
+}
+
+// Execução inicial
+inicializarInteracoesFaq();
+configurarToggleFaqs();
+atualizarExibicaoFaqs();
