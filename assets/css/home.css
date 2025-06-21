@@ -35,7 +35,8 @@
   }
 
   .hero h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    max-width: 300px;
   }
 
   .hero .subtext {
@@ -51,7 +52,7 @@
   }
 
   .hero h1 {
-    font-size: 3.5rem;
+    font-size: 2.7rem;
   }
 
   .hero .subtext {
@@ -63,31 +64,33 @@
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
   .hero {
-    padding: 20rem 1.5rem;
+    padding: 7rem 1.5rem;
   }
 
   .hero h1 {
-    font-size: 5rem;
+    font-size: 3rem;
+    max-width: 500px;
   }
 
   .hero .subtext {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     max-width: 500px;
   }
 }
 
  @media screen and (min-width: 992px) and (max-width: 1000px) {
   .hero {
-    padding: 20rem 1.5rem;
+    padding: 7rem 1.5rem;
   }
 
   .hero h1 {
-    font-size: 5rem;
+    font-size: 3rem;
+    max-width: 500px;
   }
 
   .hero .subtext {
-    font-size: 1.9rem;
-    max-width: 600px;
+    font-size: 1.5rem;
+    max-width: 500px;
   }
  }
 
@@ -100,40 +103,43 @@
 
 
   .hero h1 {
-    font-size: 5rem;
+    font-size: 3.4rem;
+    max-width: 700px;
   }
 
   .hero .subtext {
-    font-size: 1.5rem;
-    max-width: 600px;
+    font-size: 1.4rem;
+    max-width: 700px;
   }
 }
 
 /* === 1600px até 1919px === */
 @media screen and (min-width: 1600px) and (max-width: 1919px) {
   .hero h1 {
-    font-size: 4.4rem;
+    font-size: 4rem;
+    max-width: 900px;
   }
 
   .hero .subtext {
-    font-size: 1.3rem;
-    max-width: 500px;
+    font-size: 1.5rem;
+    max-width: 600px;
   }
 }
 
 /* === min-width 1920px === */
 @media screen and (min-width: 1920px) {
   .hero {
-    padding: 10rem 3rem;
+    padding: 7rem 3rem;
   }
 
   .hero h1 {
-    font-size: 5rem;
+    font-size: 4.4rem;
+    max-width: 900px;
   }
 
   .hero .subtext {
-    font-size: 1.5rem;
-    max-width: 600px;
+    font-size: 1.6rem;
+    max-width: 700px;
   }
 }
 

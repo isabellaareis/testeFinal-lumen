@@ -1,5 +1,4 @@
-/* MENU HAMBURGUER */
-
+// MENU HAMBURGUER (mantém como está)
 const hamburger = document.getElementById("hamburger");
 const navMobile = document.getElementById("navMobile");
 
@@ -8,23 +7,20 @@ hamburger.addEventListener("click", () => {
     navMobile.classList.toggle("active");
 });
 
-// Seleciona todos os itens da FAQ
+// Código FAQ
 const faqItems = document.querySelectorAll('.faq-item');
-const toggleButton = document.getElementById('toggle-faq-btn');
+const toggleFaqBtn = document.getElementById('toggle-faq-btn');
 
-let mostrarTudo = false;
-const limiteInicial = 3;
-
-
+let mostrarTudoFaq = false;
+const limiteInicialFaq = 3;
 
 function atualizarExibicaoFaqs() {
   faqItems.forEach((item, index) => {
-    item.style.display = (mostrarTudo || index < limiteInicial) ? 'block' : 'none';
+    item.style.display = (mostrarTudoFaq || index < limiteInicialFaq) ? 'block' : 'none';
   });
 
-  toggleButton.textContent = mostrarTudo ? 'Ver Menos' : 'Ver Mais';
+  toggleFaqBtn.textContent = mostrarTudoFaq ? 'Ver Menos' : 'Ver Mais';
 }
-
 
 function inicializarInteracoesFaq() {
   faqItems.forEach(item => {
@@ -38,15 +34,53 @@ function inicializarInteracoesFaq() {
 }
 
 function configurarToggleFaqs() {
-  if (toggleButton) {
-    toggleButton.addEventListener('click', () => {
-      mostrarTudo = !mostrarTudo;
+  if (toggleFaqBtn) {
+    toggleFaqBtn.addEventListener('click', () => {
+      mostrarTudoFaq = !mostrarTudoFaq;
       atualizarExibicaoFaqs();
     });
   }
 }
 
-// Execução inicial
 inicializarInteracoesFaq();
 configurarToggleFaqs();
 atualizarExibicaoFaqs();
+
+// Código Espada
+const espadaItems = document.querySelectorAll('.espada-item');
+const toggleEspadaBtn = document.getElementById('toggle-espada-btn');
+
+let mostrarTudoEspada = false;
+const limiteInicialEspada = 3;
+
+function atualizarExibicaoEspadas() {
+  espadaItems.forEach((item, index) => {
+    item.style.display = (mostrarTudoEspada || index < limiteInicialEspada) ? 'block' : 'none';
+  });
+
+  toggleEspadaBtn.textContent = mostrarTudoEspada ? 'Ver Menos' : 'Ver Mais';
+}
+
+function inicializarInteracoesEspada() {
+  espadaItems.forEach(item => {
+    const question = item.querySelector('.espada-question');
+    if (question) {
+      question.addEventListener('click', () => {
+        item.classList.toggle('open');
+      });
+    }
+  });
+}
+
+function configurarToggleEspada() {
+  if (toggleEspadaBtn) {
+    toggleEspadaBtn.addEventListener('click', () => {
+      mostrarTudoEspada = !mostrarTudoEspada;
+      atualizarExibicaoEspadas();
+    });
+  }
+}
+
+inicializarInteracoesEspada();
+configurarToggleEspada();
+atualizarExibicaoEspadas();

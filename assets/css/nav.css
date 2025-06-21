@@ -32,14 +32,13 @@
 
 /* LOGO */
 .nav-title {
-
   display: flex;
   align-items: center;
 }
 
-.nav-title img {
-  top: 10px;
-  height: 50px;
+.nav-title svg {
+  margin-top: 20px;
+  height: 70px;
   filter: drop-shadow(0 0 6px #E8B109);
 }
 

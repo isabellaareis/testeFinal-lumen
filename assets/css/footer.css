@@ -79,6 +79,10 @@
 /* min-width: 1920px */
 @media (min-width: 1920px) {
   .footer a {
-    margin: 10px 16px 10px;
+    margin: 20px 30px 30px;
+  }
+
+  .footer{
+    font-size: 1.4rem;
   }
 }

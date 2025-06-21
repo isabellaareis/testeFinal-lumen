@@ -1,11 +1,11 @@
-#faq-section {
+#espada-section {
   color: #fff;
   padding: 4rem 1rem;
   display: flex;
   justify-content: center;
 }
 
-#faq-container {
+#espada-container {
   margin-top: 100px;
   width: 100%;
   max-width: 1100px;
@@ -14,13 +14,13 @@
   gap: 1.5rem;
 }
 
-.faq-title {
+.espada-title {
   color: #ffffff;
   text-align: center;
   margin-bottom: 5rem;
 }
 
-.faq-item {
+.espada-item {
   border-radius: 12px;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.03);
@@ -31,7 +31,7 @@
   transition: all 0.3s ease;
 }
 
-.faq-question {
+.espada-question {
   width: 100%;
   background: transparent;
   color: #fff;
@@ -47,17 +47,17 @@
   text-align: left;
 }
 
-.faq-question:hover {
+.espada-question:hover {
   background: rgba(255, 255, 255, 0.04);
 }
 
-.faq-icon {
+.espada-icon {
   font-size: 1.5rem;
   color: #E8B109;
   transition: transform 0.3s ease;
 }
 
-.faq-answer {
+.espada-answer {
   max-height: 0;
   overflow: hidden;
   background: transparent;
@@ -68,12 +68,12 @@
   transition: all 0.3s ease;
 }
 
-.faq-item.open .faq-answer {
+.espada-item.open .espada-answer {
   max-height: 500px;
   padding: 1rem 1.5rem 1.5rem;
 }
 
-.faq-item.open .faq-icon {
+.espada-item.open .espada-icon {
   transform: rotate(45deg);
 }
 
@@ -85,7 +85,7 @@
   text-decoration: none;
 }
 
-#toggle-faq-btn {
+#toggle-espada-btn {
   background-color: rgba(255, 255, 255, 0.05); 
   color: #fff;
   padding: 1rem 2rem;
@@ -98,7 +98,7 @@
   transition: all 0.3s ease;
 }
 
-#toggle-faq-btn:hover {
+#toggle-espada-btn:hover {
   background-color: #6a6b6b2e; 
   transform: scale(1.03);
 }
@@ -106,28 +106,28 @@
 /* 321px até 376px */
 @media (min-width: 321px) and (max-width: 376px) {
 
-   .faq-item{
+   .espada-item{
     width: 80vw;
     margin: 0 auto;
     height: auto;
   }
 
-  .faq-title {
+  .espada-title {
     margin-top: -50px;
     font-size: 26px;
   }
 
-  .faq-question {
+  .espada-question {
     font-size: 0.9rem;
     padding: 1rem;
   }
 
-  .faq-answer {
+  .espada-answer {
     font-size: 0.85rem;
     padding: 0 1rem;
   }
 
-  #toggle-faq-btn {
+  #toggle-espada-btn {
     margin: 2rem auto;
     display: block;
     padding: 1rem 4rem;
@@ -144,28 +144,28 @@
 /* 377px até 480px */
 @media (min-width: 377px) and (max-width: 480px) {
 
-  .faq-item{
+  .espada-item{
     width: 80vw;
     margin: 0 auto;
     height: auto;
   }
 
-  .faq-title {
+  .espada-title {
     margin-top: -40px;
     font-size: 30px;
   }
 
-  .faq-question {
+  .espada-question {
     font-size: 1rem;
     padding: 1rem;
   }
 
-  .faq-answer {
+  .espada-answer {
     font-size: 0.9rem;
     padding: 0 1rem;
   }
 
-   #toggle-faq-btn {
+   #toggle-espada-btn {
     margin: 2rem auto;
     display: block;
     padding: 1rem 3rem;
@@ -180,31 +180,35 @@
 /* 768px até 991px (tablets) */
 @media (min-width: 768px) and (max-width: 991px) {
 
-  .faq-item{
+  .espada-item{
     width: 85%;
     margin: 0 auto;
     height: auto;
   }
 
-  .faq-title {
-    font-size: 1.8rem;
+  .espada-title {
+    font-size: 42px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 
-  .faq-question {
+  .espada-question {
     font-size: 1.2rem;
     padding: 1.1rem;
   }
 
-  .faq-answer {
+  .espada-answer {
     font-size: 1.2rem;
     padding: 0 1.3rem;
   }
 
-   #toggle-faq-btn {
-      margin: 2rem auto;
-      display: block;
-       padding: 1.2rem 2.8rem;
-      font-size: 1.2rem;;
+   #toggle-espada-btn {
+    margin: 2rem auto;
+    display: block;
+     padding: 1.2rem 2.8rem;
+      font-size: 1.2rem;
   }
 
   .btnContainer-VerTodos {
@@ -213,31 +217,35 @@
 }
 
  @media screen and (min-width: 992px) and (max-width: 1000px) {
-    .faq-item{
+   .espada-item{
     width: 85%;
     margin: 0 auto;
     height: auto;
   }
 
-  .faq-title {
-    font-size: 1.8rem;
+  .espada-title {
+    font-size: 42px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 
-  .faq-question {
+  .espada-question {
     font-size: 1.2rem;
     padding: 1.1rem;
   }
 
-  .faq-answer {
+  .espada-answer {
     font-size: 1.2rem;
     padding: 0 1.3rem;
   }
 
-   #toggle-faq-btn {
-      margin: 2rem auto;
-      display: block;
-       padding: 1.2rem 2.8rem;
-      font-size: 1.2rem;;
+   #toggle-espada-btn {
+    margin: 2rem auto;
+    display: block;
+     padding: 1.2rem 2.8rem;
+      font-size: 1.2rem;
   }
 
   .btnContainer-VerTodos {
@@ -246,29 +254,29 @@
  }
 
 @media (min-width: 1200px) and (max-width: 1599px) {
-  #faq-container {
+  #espada-container {
     max-width: 1100px;
     gap: 2rem;
   }
 
-  .faq-item {
+  .espada-item {
     width: 100%;
     padding: 0.8rem;
   }
 
-  .faq-title {
+  .espada-title {
     font-size: 46px;
   }
 
-  .faq-question {
+  .espada-question {
     font-size: 1.3rem;
   }
 
-  .faq-answer {
+  .espada-answer {
     font-size: 1.2rem;
   }
 
-   #toggle-faq-btn {
+   #toggle-espada-btn {
     margin: 2rem auto;
     display: block;
     padding: 1rem 2.5rem;
@@ -283,24 +291,24 @@
 
 /* 1600px até 1919px (monitores grandes) */
 @media (min-width: 1600px) and (max-width: 1919px) {
-  .faq-container {
+  .espada-container {
     max-width: 1100px;
   }
 
-  .faq-title {
+  .espada-title {
     font-size: 50px;
   }
 
-  .faq-question {
-    font-size: 1.35rem;
+  .espada-question {
+    font-size: 1.4rem;
     padding: 2rem 2rem;
   }
 
-  .faq-answer {
+  .espada-answer {
     font-size: 1.3rem;
   }
 
-  #toggle-faq-btn {
+  #toggle-espada-btn {
     margin-top: -30px;
     padding: 1.3rem 4rem;
     font-size: 1.3rem;
@@ -309,25 +317,25 @@
 
 /* min-width: 1920px (telas ultra-wide) */
 @media (min-width: 1920px) {
-  .faq-container {
+  .espada-container {
     max-width: 1100px;
   }
 
-  .faq-title {
+  .espada-title {
     font-size: 3.5rem;
   }
 
-  .faq-question {
+  .espada-question {
     font-size: 1.5rem;
     padding: 2rem 4rem;
   }
 
-  .faq-answer {
+  .espada-answer {
     font-size: 1.4rem;
     padding: 0 2rem;
   }
 
-  #toggle-faq-btn {
+  #toggle-espada-btn {
     font-size: 1.4rem;
     padding: 1.5rem 3.8rem;
   }
