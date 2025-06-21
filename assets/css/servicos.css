@@ -223,26 +223,31 @@
       font-size: 3.5rem;;
     }
   
-    #containerServicos {
-      margin-top: 200px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 45px;
-    }
-  
-    .cardservico {
-      width: 460px;
-      height: 300px;
-    }
+   #containerServicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
+  max-width: 1500px;
+  margin: 200px auto 0 auto;
+}
 
-    .cardservico p {
-      font-size: 1.4rem;
-    }
+.cardservico {
+  flex: 0 1 calc((100% - 90px) / 3); /* 90px = 2 gaps de 45px */
+  max-width: 460px;
+  height: 300px;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
 
-    .cardservico h3 {
-      font-size: 1.4rem;
-    }
+  .cardservico p {
+    font-size: 1.4rem;
   }
+
+  .cardservico h3 {
+    font-size: 1.4rem;
+  }
+}
+
+
   

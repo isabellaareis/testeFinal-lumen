@@ -43,7 +43,6 @@ svg {
   
 }
 
-/*RESPONSIVIDADE*/
 
 /* Responsividade para dispositivos menores */
 @media (min-width: 321px) and (max-width: 376px) {
@@ -182,7 +181,7 @@ path.main {
 @media (min-width: 1920px) {
   .halo {
     position: absolute;
-    bottom: -28%;
+    bottom: -29%;
     left: 50%;
     transform: translateX(-50%);
     width: 80%; 

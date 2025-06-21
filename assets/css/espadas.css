@@ -34,7 +34,7 @@
 .espada-question {
   width: 100%;
   background: transparent;
-  color: #fff;
+  color: #ffffff;
   font-size: 1.1rem;
   font-weight: 500;
   padding: 1.2rem 1.5rem;
@@ -62,7 +62,6 @@
   overflow: hidden;
   background: transparent;
   color: #ccc;
-  padding: 0 1.5rem;
   font-size: 0.95rem;
   line-height: 1.6;
   transition: all 0.3s ease;
@@ -119,7 +118,6 @@
 
   .espada-question {
     font-size: 0.9rem;
-    padding: 1rem;
   }
 
   .espada-answer {
@@ -127,8 +125,13 @@
     padding: 0 1rem;
   }
 
+  .espada-answer ul {
+    padding-left: 1rem;
+  }
+
+
   #toggle-espada-btn {
-    margin: 2rem auto;
+    margin-top: 50px;
     display: block;
     padding: 1rem 4rem;
     font-size: 0.9rem;
@@ -162,7 +165,10 @@
 
   .espada-answer {
     font-size: 0.9rem;
-    padding: 0 1rem;
+  }
+
+   .espada-answer ul {
+    padding-left: 1rem;
   }
 
    #toggle-espada-btn {
@@ -204,6 +210,10 @@
     padding: 0 1.3rem;
   }
 
+  .espada-answer ul {
+    padding-left: 1.3rem;
+  }
+
    #toggle-espada-btn {
     margin: 2rem auto;
     display: block;
@@ -241,6 +251,11 @@
     padding: 0 1.3rem;
   }
 
+   .espada-answer ul {
+    padding-left: 1.3rem;
+  }
+
+
    #toggle-espada-btn {
     margin: 2rem auto;
     display: block;
@@ -274,7 +289,13 @@
 
   .espada-answer {
     font-size: 1.2rem;
+
   }
+
+
+   .espada-answer ul {
+      padding-left: 2rem;
+   }
 
    #toggle-espada-btn {
     margin: 2rem auto;
@@ -308,6 +329,11 @@
     font-size: 1.3rem;
   }
 
+  .espada-answer ul {
+      padding-left: 2.2rem;
+   }
+
+
   #toggle-espada-btn {
     margin-top: -30px;
     padding: 1.3rem 4rem;
@@ -334,6 +360,11 @@
     font-size: 1.4rem;
     padding: 0 2rem;
   }
+
+  .espada-answer ul {
+      padding-left: 2.4rem;
+   }
+
 
   #toggle-espada-btn {
     font-size: 1.4rem;
